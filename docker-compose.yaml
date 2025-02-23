@@ -1,0 +1,35 @@
+version: "3.8"
+
+name: "WebCource"
+
+services:
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: application_database
+    ports:
+      - "1333:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=goblinusik111W
+    volumes:
+      - db_volume:/var/opt/mssql
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: message_broker_rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=FaITh725
+      - RABBITMQ_DEFAULT_PASS=goblinusik111W
+    networks:
+      - rabbitmq_net
+  
+networks:
+  rabbitmq_net:
+    driver: bridge
+
+volumes:
+  db_volume:
+    driver: local

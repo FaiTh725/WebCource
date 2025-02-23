@@ -1,0 +1,11 @@
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Test.Application.deps.json
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Test.Application.dll
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Test.Application.pdb
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.dll
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\refint\Test.Application.dll
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Application.pdb
+C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\ref\Test.Application.dll

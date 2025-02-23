@@ -1,0 +1,12 @@
+C:\VSProjects\WebCource\backend\Test.Domain\bin\Debug\net8.0\Test.Domain.deps.json
+C:\VSProjects\WebCource\backend\Test.Domain\bin\Debug\net8.0\Test.Domain.dll
+C:\VSProjects\WebCource\backend\Test.Domain\bin\Debug\net8.0\Test.Domain.pdb
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.dll
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\refint\Test.Domain.dll
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.pdb
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\ref\Test.Domain.dll
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.csproj.AssemblyReference.cache

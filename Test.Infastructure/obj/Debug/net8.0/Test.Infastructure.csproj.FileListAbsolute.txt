@@ -1,0 +1,11 @@
+C:\VSProjects\WebCource\backend\Test.Infastructure\bin\Debug\net8.0\Test.Infastructure.deps.json
+C:\VSProjects\WebCource\backend\Test.Infastructure\bin\Debug\net8.0\Test.Infastructure.dll
+C:\VSProjects\WebCource\backend\Test.Infastructure\bin\Debug\net8.0\Test.Infastructure.pdb
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.dll
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\refint\Test.Infastructure.dll
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\Test.Infastructure.pdb
+C:\VSProjects\WebCource\backend\Test.Infastructure\obj\Debug\net8.0\ref\Test.Infastructure.dll
