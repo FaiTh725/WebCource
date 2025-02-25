@@ -16,13 +16,10 @@ builder.Services.AddProblemDetails();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
 builder.Services.ConfigureMediats();
+builder.Services.AddRabbitMq(builder.Configuration);
 
 builder.Services.ConfigureAppRepositories();
-
 builder.Services.ConfigureAppServices();
-
-builder.Services.ConfigureBackgroundServices();
-
 builder.Services.ConfigureInfastructureServices();
 
 var app = builder.Build();

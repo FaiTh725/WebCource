@@ -2,7 +2,9 @@
 using Authorize.Application.Contacts.Token;
 using Authorize.Application.Interfaces;
 using Authorize.Domain.Repositories;
+using MassTransit;
 using MediatR;
+using Test.Contracts.Student;
 using UserEntity = Authorize.Domain.Entities.User;
 
 namespace Authorize.Application.Commands.User.Register
@@ -12,15 +14,18 @@ namespace Authorize.Application.Commands.User.Register
         private readonly IUnitOfWork unitOfWork;
         private readonly IHashService hashService;
         private readonly IJwtService<UserEntity, TokenResponse> jwtService;
+        private readonly IBus bus;
 
         public RegisterUserHandler(
             IUnitOfWork unitOfWork,
             IHashService hashService,
-            IJwtService<UserEntity, TokenResponse> jwtService)
+            IJwtService<UserEntity, TokenResponse> jwtService,
+            IBus bus)
         {
             this.unitOfWork = unitOfWork;
             this.hashService = hashService;
             this.jwtService = jwtService;
+            this.bus = bus;
         }
 
         public async Task<string> Handle(
@@ -61,6 +66,13 @@ namespace Authorize.Application.Commands.User.Register
             }
 
             var newUser = await unitOfWork.UserRepository.AddUser(userEntity.Value);
+
+            await bus.Publish(new StudentCreated
+            {
+                Email = request.Email,
+                Name = request.Name,
+                GroupNumber = request.Group
+            });
 
             await unitOfWork.SaveChangesAsync();
 

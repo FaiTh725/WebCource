@@ -1,4 +1,7 @@
-﻿using Authorize.Application;
+﻿using Application.Shared.Exceptions;
+using Authorize.API.Helpers.Conf;
+using Authorize.Application;
+using MassTransit;
 
 namespace Authorize.API.Extentions
 {
@@ -8,6 +11,32 @@ namespace Authorize.API.Extentions
         {
             services.AddMediatR(cfg =>
                 cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly));
+        }
+
+        public static void AddRabbitMq(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var rabbitMqConf = configuration
+                .GetSection("RabbitMq")
+                .Get<RabbitMqConf>() ??
+                throw new AppConfigurationException("RabbitMq Configuration Section");
+
+            services.AddMassTransit(conf =>
+            {
+                conf.SetKebabCaseEndpointNameFormatter();
+
+                conf.UsingRabbitMq((context, configurator) =>
+                {
+                    configurator.Host(rabbitMqConf.Host, h =>
+                    {
+                        h.Username(rabbitMqConf.UserLogin);
+                        h.Password(rabbitMqConf.UserPassword);
+                    });
+
+                    configurator.ConfigureEndpoints(context);
+                });
+            });
         }
     }
 }

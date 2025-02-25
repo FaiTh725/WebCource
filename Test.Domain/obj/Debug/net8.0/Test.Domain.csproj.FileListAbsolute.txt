@@ -10,3 +10,4 @@ C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\refint\Test.Domain.
 C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.pdb
 C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\ref\Test.Domain.dll
 C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.csproj.AssemblyReference.cache
+C:\VSProjects\WebCource\backend\Test.Domain\obj\Debug\net8.0\Test.Domain.sourcelink.json

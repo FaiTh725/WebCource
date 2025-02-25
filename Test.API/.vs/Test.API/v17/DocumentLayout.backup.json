@@ -3,86 +3,41 @@
   "WorkspaceRootPath": "C:\\VSProjects\\WebCource\\backend\\Test.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\testattemptconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\extentions\\appextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:extentions\\appextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\testanswerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\helpers\\conf\\jwtconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:helpers\\conf\\jwtconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\teacherconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\testanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DEE16D3-55AF-444B-9E91-9F0FD9ADC36F}|..\\Test.Application\\Test.Application.csproj|c:\\vsprojects\\webcource\\backend\\test.application\\consumers\\student\\studentcreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\studentgroupconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DEE16D3-55AF-444B-9E91-9F0FD9ADC36F}|..\\Test.Application\\Test.Application.csproj|c:\\vsprojects\\webcource\\backend\\test.application\\queries\\group\\responses\\groupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DEE16D3-55AF-444B-9E91-9F0FD9ADC36F}|..\\Test.Application\\Test.Application.csproj|c:\\vsprojects\\webcource\\backend\\test.application\\commands\\student\\createstudent\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DEE16D3-55AF-444B-9E91-9F0FD9ADC36F}|..\\Test.Application\\Test.Application.csproj|c:\\vsprojects\\webcource\\backend\\test.application\\commands\\student\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\testvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EF2E0C9-6681-4BC8-ABE2-1059AB6EF551}|..\\Test.Contracts\\Test.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\test.contracts\\student\\studentcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\studentgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\testattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\entities\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\test.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\test.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:test.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|c:\\vsprojects\\webcource\\backend\\test.api\\test.api.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5A4E42F6-4DE8-4BA8-A84B-44A6F76F3069}|Test.API.csproj|solutionrelative:test.api.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\subjectconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\testconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BD4502-3B3F-419B-A56F-71BB345AA5CB}|..\\Test.Dal\\Test.Dal.csproj|c:\\vsprojects\\webcource\\backend\\test.dal\\configurations\\testvariantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\enums\\testtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637A7060-B4BF-4D1B-87EC-F80B0D454963}|..\\Test.Domain\\Test.Domain.csproj|c:\\vsprojects\\webcource\\backend\\test.domain\\test.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DEE16D3-55AF-444B-9E91-9F0FD9ADC36F}|..\\Test.Application\\Test.Application.csproj|c:\\vsprojects\\webcource\\backend\\test.application\\test.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1EF2E0C9-6681-4BC8-ABE2-1059AB6EF551}|..\\Test.Contracts\\Test.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\test.contracts\\test.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -92,7 +47,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -112,107 +67,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\StudentConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\StudentConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\StudentConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\StudentConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RabbitMqConf.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Helpers\\Conf\\RabbitMqConf.cs",
+              "RelativeDocumentMoniker": "Helpers\\Conf\\RabbitMqConf.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Helpers\\Conf\\RabbitMqConf.cs",
+              "RelativeToolTip": "Helpers\\Conf\\RabbitMqConf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:25:06.601Z",
+              "WhenOpened": "2025-02-25T17:48:36.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TestAnswerConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestAnswerConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\TestAnswerConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestAnswerConfiguration.cs*",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\TestAnswerConfiguration.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Title": "JwtConf.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Helpers\\Conf\\JwtConf.cs",
+              "RelativeDocumentMoniker": "Helpers\\Conf\\JwtConf.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Helpers\\Conf\\JwtConf.cs",
+              "RelativeToolTip": "Helpers\\Conf\\JwtConf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T20:20:43.685Z",
+              "WhenOpened": "2025-02-25T17:46:39.374Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupResponse.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Queries\\Group\\Responses\\GroupResponse.cs",
+              "RelativeDocumentMoniker": "..\\Test.Application\\Queries\\Group\\Responses\\GroupResponse.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Queries\\Group\\Responses\\GroupResponse.cs",
+              "RelativeToolTip": "..\\Test.Application\\Queries\\Group\\Responses\\GroupResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:43:14.389Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TestAttemptConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestAttemptConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\TestAttemptConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestAttemptConfiguration.cs*",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\TestAttemptConfiguration.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Title": "AppExtention.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Extentions\\AppExtention.cs",
+              "RelativeDocumentMoniker": "Extentions\\AppExtention.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Extentions\\AppExtention.cs",
+              "RelativeToolTip": "Extentions\\AppExtention.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T20:20:43.93Z",
+              "WhenOpened": "2025-02-25T17:35:39.14Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateStudentCommand.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommand.cs",
+              "RelativeDocumentMoniker": "..\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommand.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommand.cs",
+              "RelativeToolTip": "..\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:34:11.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateStudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "RelativeToolTip": "..\\Test.Application\\Commands\\Student\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:34:08.162Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TestAnswer.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestAnswer.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\TestAnswer.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestAnswer.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\TestAnswer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Title": "StudentCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Consumers\\Student\\StudentCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "..\\Test.Application\\Consumers\\Student\\StudentCreatedConsumer.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Consumers\\Student\\StudentCreatedConsumer.cs",
+              "RelativeToolTip": "..\\Test.Application\\Consumers\\Student\\StudentCreatedConsumer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:53:51.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T17:29:06.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeacherConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TeacherConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\TeacherConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TeacherConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\TeacherConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GroupController.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Controllers\\GroupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:25:06.798Z",
+              "WhenOpened": "2025-02-25T17:33:57.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Test.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Test.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\Test.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Test.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\Test.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Title": "StudentCreated.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Contracts\\Student\\StudentCreated.cs",
+              "RelativeDocumentMoniker": "..\\Test.Contracts\\Student\\StudentCreated.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Contracts\\Student\\StudentCreated.cs",
+              "RelativeToolTip": "..\\Test.Contracts\\Student\\StudentCreated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T23:52:32.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TestAttempt.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestAttempt.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\TestAttempt.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestAttempt.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\TestAttempt.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:53:51.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Profile.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\Profile.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Profile.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\Profile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T23:52:31.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T17:30:36.384Z"
             },
             {
               "$type": "Document",
@@ -222,224 +185,21 @@
               "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\Student.cs",
               "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Student.cs",
               "RelativeToolTip": "..\\Test.Domain\\Entities\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T23:55:31.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Teacher.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\Teacher.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Teacher.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T23:55:31.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Subject.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\Subject.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\Subject.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\Subject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:04:27.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestVariant.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestVariant.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\TestVariant.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\TestVariant.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\TestVariant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:35:42.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\AppDbContext.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Test.Dal\\AppDbContext.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAuwB8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T23:22:14.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentGroupConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\StudentGroupConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\StudentGroupConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\StudentGroupConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\StudentGroupConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T21:07:24.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Test.Dal.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Test.Dal.csproj",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Test.Dal.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Test.Dal.csproj",
-              "RelativeToolTip": "..\\Test.Dal\\Test.Dal.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-22T23:21:43.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SubjectConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\SubjectConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\SubjectConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\SubjectConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\SubjectConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:25:07.429Z"
+              "WhenOpened": "2025-02-25T17:31:24.292Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "StudentGroup.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\StudentGroup.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Entities\\StudentGroup.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Entities\\StudentGroup.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Entities\\StudentGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T21:02:22.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Test.API.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Test.API.csproj",
-              "RelativeDocumentMoniker": "Test.API.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Test.API.csproj",
-              "RelativeToolTip": "Test.API.csproj",
+              "Title": "Test.Contracts.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Contracts\\Test.Contracts.csproj",
+              "RelativeDocumentMoniker": "..\\Test.Contracts\\Test.Contracts.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Contracts\\Test.Contracts.csproj",
+              "RelativeToolTip": "..\\Test.Contracts\\Test.Contracts.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-23T21:44:01.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Test.API.csproj.Backup.tmp",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Test.API.csproj.Backup.tmp",
-              "RelativeDocumentMoniker": "Test.API.csproj.Backup.tmp",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Test.API.csproj.Backup.tmp",
-              "RelativeToolTip": "Test.API.csproj.Backup.tmp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-23T21:43:42.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T21:40:49.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-23T21:42:45.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TestConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\TestConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\TestConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:25:06.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TestVariantConfiguration.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestVariantConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Test.Dal\\Configurations\\TestVariantConfiguration.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Dal\\Configurations\\TestVariantConfiguration.cs",
-              "RelativeToolTip": "..\\Test.Dal\\Configurations\\TestVariantConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:25:07.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TestType.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Enums\\TestType.cs",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Enums\\TestType.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Enums\\TestType.cs",
-              "RelativeToolTip": "..\\Test.Domain\\Enums\\TestType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:37:22.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Test.Domain.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Test.Domain.csproj",
-              "RelativeDocumentMoniker": "..\\Test.Domain\\Test.Domain.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Domain\\Test.Domain.csproj",
-              "RelativeToolTip": "..\\Test.Domain\\Test.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-22T23:21:27.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Test.Application.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Test.Application.csproj",
-              "RelativeDocumentMoniker": "..\\Test.Application\\Test.Application.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Test.Application.csproj",
-              "RelativeToolTip": "..\\Test.Application\\Test.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-22T23:49:40.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T17:30:25.188Z"
             }
           ]
         }

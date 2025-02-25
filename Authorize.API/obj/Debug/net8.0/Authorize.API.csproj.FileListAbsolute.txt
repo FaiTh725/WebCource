@@ -188,3 +188,10 @@ C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Microsoft.Extensi
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\VSProjects\WebCource\backend\Authorize.API\obj\Debug\net8.0\Authorize.API.sourcelink.json
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\MassTransit.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.pdb

@@ -45,7 +45,6 @@ namespace Authorize.API.Middlewares
             return await problemDetailsService.TryWriteAsync(new ProblemDetailsContext 
             { 
                 HttpContext = httpContext,
-                Exception = exception,
                 ProblemDetails = new ProblemDetails
                 {
                     Type = exception.GetType().Name,

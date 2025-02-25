@@ -9,13 +9,10 @@ namespace Authorize.Infastructure
 {
     public static class Startup
     {
-        public static void ConfigureBackgroundServices(this IServiceCollection services)
-        {
-            services.AddHostedService<InitializeRoles>();
-        }
-
         public static void ConfigureInfastructureServices(this IServiceCollection services)
         {
+            services.AddHostedService<InitializeRoles>();
+
             services.AddSingleton<IJwtService<User, TokenResponse>, JwtUserService>();
         }
     }

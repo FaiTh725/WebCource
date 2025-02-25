@@ -17,3 +17,4 @@ C:\VSProjects\WebCource\backend\Authorize.Dal\bin\Debug\net8.0\Application.Share
 C:\VSProjects\WebCource\backend\Authorize.Dal\obj\Debug\net8.0\Authorize.Dal.csproj.AssemblyReference.cache
 C:\VSProjects\WebCource\backend\Authorize.Dal\obj\Debug\net8.0\Authoriz.07BFE1DE.Up2Date
 C:\VSProjects\WebCource\backend\Authorize.Dal\obj\Debug\net8.0\Authorize.Dal.genruntimeconfig.cache
+C:\VSProjects\WebCource\backend\Authorize.Dal\obj\Debug\net8.0\Authorize.Dal.sourcelink.json

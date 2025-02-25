@@ -29,6 +29,15 @@ namespace Authorize.API.Controllers
                 Token = token
             });
 
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.None
+            };
+
+            Response.Cookies.Append("token", token);
+
             return Ok(decodeToken);
         }
 
@@ -41,6 +50,15 @@ namespace Authorize.API.Controllers
             {
                 Token = token
             });
+
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.None
+            };
+            
+            Response.Cookies.Append("token", token);
 
             return Ok(decodeToken);
         }

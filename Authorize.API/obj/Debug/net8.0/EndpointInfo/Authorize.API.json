@@ -77,6 +77,14 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "group": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

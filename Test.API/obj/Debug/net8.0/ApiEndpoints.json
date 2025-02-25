@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Test.API.Controllers.GroupController",
+    "Method": "AddGroup",
+    "RelativePath": "api/Group/AddGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Group.CreateGroupCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

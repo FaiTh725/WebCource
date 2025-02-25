@@ -1,3 +1,5 @@
+using Test.API.Extentions;
+using Test.API.Middlewares;
 using Test.Dal;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,15 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>();
 
+builder.Services.AddJwtAuth(builder.Configuration);
+builder.Services.AddRabbitMq(builder.Configuration);
+builder.Services.ConfigureMediatr();
+
+builder.Services.AddDalRepositories();
+
+builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+
 var app = builder.Build();
 
 app.UseSwagger();
@@ -18,7 +29,10 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-//app.UseAuthorization();
+app.UseExceptionHandler(opt => { });
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

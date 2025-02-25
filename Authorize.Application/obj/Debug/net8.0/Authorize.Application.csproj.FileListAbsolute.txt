@@ -15,3 +15,6 @@ C:\VSProjects\WebCource\backend\Authorize.Application\obj\Debug\net8.0\Authorize
 C:\VSProjects\WebCource\backend\Authorize.Application\obj\Debug\net8.0\Authoriz.FE2E41FA.Up2Date
 C:\VSProjects\WebCource\backend\Authorize.Application\bin\Debug\net8.0\Application.Shared.dll
 C:\VSProjects\WebCource\backend\Authorize.Application\bin\Debug\net8.0\Application.Shared.pdb
+C:\VSProjects\WebCource\backend\Authorize.Application\obj\Debug\net8.0\Authorize.Application.sourcelink.json
+C:\VSProjects\WebCource\backend\Authorize.Application\bin\Debug\net8.0\Test.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.Application\bin\Debug\net8.0\Test.Contracts.pdb

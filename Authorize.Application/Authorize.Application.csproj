@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.6" />
     <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
@@ -18,6 +19,9 @@
   <ItemGroup>
     <Reference Include="Application.Shared">
       <HintPath>..\Application.Shared\bin\Debug\net8.0\Application.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Test.Contracts">
+      <HintPath>..\Test.Contracts\bin\Debug\net8.0\Test.Contracts.dll</HintPath>
     </Reference>
   </ItemGroup>
 

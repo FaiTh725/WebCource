@@ -10,3 +10,4 @@ C:\VSProjects\WebCource\backend\Authorize.Domain\obj\Debug\net8.0\refint\Authori
 C:\VSProjects\WebCource\backend\Authorize.Domain\obj\Debug\net8.0\Authorize.Domain.pdb
 C:\VSProjects\WebCource\backend\Authorize.Domain\obj\Debug\net8.0\ref\Authorize.Domain.dll
 C:\VSProjects\WebCource\backend\Authorize.Domain\obj\Debug\net8.0\Authorize.Domain.csproj.AssemblyReference.cache
+C:\VSProjects\WebCource\backend\Authorize.Domain\obj\Debug\net8.0\Authorize.Domain.sourcelink.json

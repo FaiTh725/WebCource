@@ -17,3 +17,4 @@ C:\VSProjects\WebCource\backend\Test.Dal\bin\Debug\net8.0\Application.Shared.pdb
 C:\VSProjects\WebCource\backend\Test.Dal\obj\Debug\net8.0\Test.Dal.csproj.AssemblyReference.cache
 C:\VSProjects\WebCource\backend\Test.Dal\obj\Debug\net8.0\Test.Dal.csproj.Up2Date
 C:\VSProjects\WebCource\backend\Test.Dal\obj\Debug\net8.0\Test.Dal.genruntimeconfig.cache
+C:\VSProjects\WebCource\backend\Test.Dal\obj\Debug\net8.0\Test.Dal.sourcelink.json
