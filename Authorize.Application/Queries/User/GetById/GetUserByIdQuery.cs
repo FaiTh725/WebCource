@@ -1,4 +1,4 @@
-﻿using Authorize.Application.Queries.User.Responses;
+﻿using Authorize.Application.Contacts.User;
 using MediatR;
 
 namespace Authorize.Application.Queries.User.GetById

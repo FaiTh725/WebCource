@@ -1,4 +1,4 @@
-﻿namespace Test.Application.Queries.Group.Responses
+﻿namespace Test.Application.Consumers.Group
 {
     public class GroupResponse
     {

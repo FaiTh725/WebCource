@@ -1,5 +1,4 @@
 ﻿using CSharpFunctionalExtensions;
-using System.Globalization;
 
 namespace Test.Domain.Entities
 {

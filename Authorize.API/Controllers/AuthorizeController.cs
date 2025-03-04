@@ -1,6 +1,8 @@
 ﻿using Authorize.Application.Commands.User.Login;
 using Authorize.Application.Commands.User.Register;
-using Authorize.Application.Queries.User.DecodeUserToken;
+using Authorize.Application.Contacts.Token;
+using Authorize.Application.Contacts.User;
+using Authorize.Application.Interfaces;
 using Authorize.Application.Queries.User.GetById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -12,21 +14,30 @@ namespace Authorize.API.Controllers
     public class AuthorizeController : ControllerBase
     {
         private readonly IMediator mediator;
+        private readonly IJwtService<GenerateUserToken, TokenResponse> jwtService;
 
         public AuthorizeController(
-            IMediator mediator)
+            IMediator mediator,
+            IJwtService<GenerateUserToken, TokenResponse> jwtService)
         {
             this.mediator = mediator;
+            this.jwtService = jwtService;
         }
 
         [HttpGet("[action]")]
         public async Task<IActionResult> Login([FromQuery]LoginUserRequest request)
         {
-            var token = await mediator.Send(request);
+            var userId = await mediator.Send(request);
 
-            var decodeToken = await mediator.Send(new DecodeUserQuery
+            var user = await mediator.Send(new GetUserByIdQuery
             {
-                Token = token
+                Id = userId
+            });
+
+            var token = jwtService.GenerateToken(new GenerateUserToken
+            {
+                Email = user.Email,
+                RoleName = user.RoleName
             });
 
             var cookieOptions = new CookieOptions
@@ -38,17 +49,23 @@ namespace Authorize.API.Controllers
 
             Response.Cookies.Append("token", token);
 
-            return Ok(decodeToken);
+            return Ok(user);
         }
 
         [HttpPost("[action]")]
         public async Task<IActionResult> Register(RegisterUserRequest request)
         {
-            var token = await mediator.Send(request);
+            var userId = await mediator.Send(request);
 
-            var decodeToken = await mediator.Send(new DecodeUserQuery
+            var user = await mediator.Send(new GetUserByIdQuery
             {
-                Token = token
+                Id = userId
+            });
+
+            var token = jwtService.GenerateToken(new GenerateUserToken
+            {
+                Email = user.Email,
+                RoleName = user.RoleName
             });
 
             var cookieOptions = new CookieOptions
@@ -57,10 +74,10 @@ namespace Authorize.API.Controllers
                 Secure = true,
                 SameSite = SameSiteMode.None
             };
-            
+
             Response.Cookies.Append("token", token);
 
-            return Ok(decodeToken);
+            return Ok(user);
         }
     }
 }

@@ -69,6 +69,7 @@ namespace Test.API.Extentions
                 conf.SetKebabCaseEndpointNameFormatter();
 
                 conf.AddConsumer<StudentCreatedConsumer>();
+                //conf.AddConsumer<TestCreatedStudentConsumer>();
 
                 conf.UsingRabbitMq((context, configurator) =>
                 {

@@ -1,6 +1,6 @@
-﻿namespace Authorize.Application.Queries.User.Responses
+﻿namespace Authorize.Application.Contacts.User
 {
-    public class UserResponse
+    public class GenerateUserToken
     {
         public string Email { get; set; } = string.Empty;
 

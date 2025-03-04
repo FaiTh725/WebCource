@@ -1,6 +1,6 @@
 ﻿using Authorize.Application.Contacts.Token;
+using Authorize.Application.Contacts.User;
 using Authorize.Application.Interfaces;
-using Authorize.Domain.Entities;
 using Authorize.Infastructure.BackgroundServices;
 using Authorize.Infastructure.Implementations;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +13,7 @@ namespace Authorize.Infastructure
         {
             services.AddHostedService<InitializeRoles>();
 
-            services.AddSingleton<IJwtService<User, TokenResponse>, JwtUserService>();
+            services.AddSingleton<IJwtService<GenerateUserToken, TokenResponse>, JwtUserService>();
         }
     }
 }

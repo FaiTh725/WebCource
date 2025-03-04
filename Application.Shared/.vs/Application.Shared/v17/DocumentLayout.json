@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|solutionrelative:exceptions\\conflictapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|c:\\vsprojects\\webcource\\backend\\application.shared\\exceptions\\baseapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|solutionrelative:exceptions\\baseapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|c:\\vsprojects\\webcource\\backend\\application.shared\\exceptions\\badrequestapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|solutionrelative:exceptions\\badrequestapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|c:\\vsprojects\\webcource\\backend\\application.shared\\exceptions\\baseapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|solutionrelative:exceptions\\baseapiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96B24947-AD3F-4AFF-A067-3513E3FE1F56}|Application.Shared.csproj|c:\\vsprojects\\webcource\\backend\\application.shared\\exceptions\\appconfigurationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,33 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConflictApiException.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\ConflictApiException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\ConflictApiException.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\ConflictApiException.cs",
-              "RelativeToolTip": "Exceptions\\ConflictApiException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:24:29.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BaseApiException.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\BaseApiException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\BaseApiException.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\BaseApiException.cs",
-              "RelativeToolTip": "Exceptions\\BaseApiException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:25:09.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BadRequestApiException.cs",
               "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\BadRequestApiException.cs",
               "RelativeDocumentMoniker": "Exceptions\\BadRequestApiException.cs",
@@ -92,8 +66,7 @@
               "RelativeToolTip": "Exceptions\\BadRequestApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:23:41.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T20:23:41.416Z"
             },
             {
               "$type": "Document",
@@ -105,8 +78,7 @@
               "RelativeToolTip": "Exceptions\\InternalServerApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:24:04.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T20:24:04.739Z"
             },
             {
               "$type": "Document",
@@ -123,6 +95,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseApiException.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\BaseApiException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\BaseApiException.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\BaseApiException.cs",
+              "RelativeToolTip": "Exceptions\\BaseApiException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:25:09.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConflictApiException.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\ConflictApiException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ConflictApiException.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\ConflictApiException.cs",
+              "RelativeToolTip": "Exceptions\\ConflictApiException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:24:29.193Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "AppConfigurationException.cs",
               "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Application.Shared\\Exceptions\\AppConfigurationException.cs",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "Exceptions\\AppConfigurationException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T23:07:12.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T23:07:12.446Z"
             },
             {
               "$type": "Document",

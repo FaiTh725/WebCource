@@ -1,6 +1,5 @@
-﻿
-using MediatR;
-using Test.Application.Queries.Group.Responses;
+﻿using MediatR;
+using Test.Application.Consumers.Group;
 
 namespace Test.Application.Queries.Group.GetById
 {

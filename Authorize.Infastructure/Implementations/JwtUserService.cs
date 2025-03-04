@@ -1,7 +1,7 @@
 ﻿using Application.Shared.Exceptions;
 using Authorize.Application.Contacts.Token;
+using Authorize.Application.Contacts.User;
 using Authorize.Application.Interfaces;
-using Authorize.Domain.Entities;
 using Authorize.Infastructure.Helpers.Jwt;
 using CSharpFunctionalExtensions;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Authorize.Infastructure.Implementations
 {
-    public class JwtUserService : IJwtService<User, TokenResponse>
+    public class JwtUserService : IJwtService<GenerateUserToken, TokenResponse>
     {
         private readonly IConfiguration configuration;
 
@@ -45,7 +45,7 @@ namespace Authorize.Infastructure.Implementations
             });
         }
 
-        public string GenerateToken(User tokenObject)
+        public string GenerateToken(GenerateUserToken tokenObject)
         {
             var jwtConf = configuration
                 .GetSection("JwtSetting")
@@ -59,7 +59,7 @@ namespace Authorize.Infastructure.Implementations
             var claims = new Claim[]
             {
                 new Claim(ClaimTypes.Email, tokenObject.Email),
-                new Claim(ClaimTypes.Role, tokenObject.Role.RoleName)
+                new Claim(ClaimTypes.Role, tokenObject.RoleName)
             };
 
             var token = new JwtSecurityToken(

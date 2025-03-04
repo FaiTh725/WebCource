@@ -26,6 +26,12 @@ namespace Authorize.API.Extentions
             {
                 conf.SetKebabCaseEndpointNameFormatter();
 
+                //conf.AddSagaStateMachine<RegisterUserSaga, RegisterUserStateData>()
+                //.InMemoryRepository();
+
+                //conf.AddConsumer<CreateUserConsumer>();
+                //conf.AddConsumer<CreateStudentConsumer>();
+
                 conf.UsingRabbitMq((context, configurator) =>
                 {
                     configurator.Host(rabbitMqConf.Host, h =>

@@ -1,5 +1,5 @@
 ﻿using Application.Shared.Exceptions;
-using Authorize.Application.Queries.User.Responses;
+using Authorize.Application.Contacts.User;
 using Authorize.Domain.Repositories;
 using MediatR;
 

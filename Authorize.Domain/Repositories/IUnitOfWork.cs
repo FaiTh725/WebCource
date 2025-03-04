@@ -21,7 +21,7 @@ namespace Authorize.Domain.Repositories
 
         void RollBackTransaction();
 
-        Task RollBackTransactionASync();
+        Task RollBackTransactionAsync();
         
         bool CanConnect();
 

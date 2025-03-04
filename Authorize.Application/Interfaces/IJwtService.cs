@@ -1,5 +1,4 @@
-﻿using Authorize.Domain.Entities;
-using CSharpFunctionalExtensions;
+﻿using CSharpFunctionalExtensions;
 
 namespace Authorize.Application.Interfaces
 {

@@ -1,34 +1,32 @@
 ﻿using Application.Shared.Exceptions;
-using Authorize.Application.Contacts.Token;
 using Authorize.Application.Interfaces;
 using Authorize.Domain.Repositories;
 using MassTransit;
 using MediatR;
-using Test.Contracts.Student;
+using Test.Contracts.Student.Requests;
+using Test.Contracts.Student.Responses;
 using UserEntity = Authorize.Domain.Entities.User;
 
 namespace Authorize.Application.Commands.User.Register
 {
-    public class RegisterUserHandler : IRequestHandler<RegisterUserRequest, string>
+    // implement token in another api
+    public class RegisterUserHandler : IRequestHandler<RegisterUserRequest, long>
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IHashService hashService;
-        private readonly IJwtService<UserEntity, TokenResponse> jwtService;
-        private readonly IBus bus;
+        private readonly IRequestClient<CreateStudentRequest> client;
 
         public RegisterUserHandler(
             IUnitOfWork unitOfWork,
             IHashService hashService,
-            IJwtService<UserEntity, TokenResponse> jwtService,
-            IBus bus)
+            IRequestClient<CreateStudentRequest> client)
         {
             this.unitOfWork = unitOfWork;
             this.hashService = hashService;
-            this.jwtService = jwtService;
-            this.bus = bus;
+            this.client = client;
         }
 
-        public async Task<string> Handle(
+        public async Task<long> Handle(
             RegisterUserRequest request, 
             CancellationToken cancellationToken)
         {
@@ -65,20 +63,29 @@ namespace Authorize.Application.Commands.User.Register
                 throw new BadRequestApiException(userEntity.Error);
             }
 
+            await unitOfWork.BeginTransactionAsync();
+
             var newUser = await unitOfWork.UserRepository.AddUser(userEntity.Value);
 
-            await bus.Publish(new StudentCreated
+            var responseCreateStudent = await client.GetResponse<StudentCreatedResponse>(new CreateStudentRequest
             {
                 Email = request.Email,
                 Name = request.Name,
                 GroupNumber = request.Group
             });
 
-            await unitOfWork.SaveChangesAsync();
+            if(!responseCreateStudent.Message.IsSuccess)
+            {
+                await unitOfWork.RollBackTransactionAsync();
+                throw new BadRequestApiException(responseCreateStudent.Message.ErrorMessage);
+            }
+            else
+            {
+                await unitOfWork.SaveChangesAsync();
+                await unitOfWork.CommitTransactionAsync();
+            }
 
-            var token = jwtService.GenerateToken(userEntity.Value);
-
-            return token;
+            return newUser.Id;
         }
     }
 }

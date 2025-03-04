@@ -81,7 +81,7 @@ namespace Authorize.Dal.Repositories
             transaction.Rollback();
         }
 
-        public async Task RollBackTransactionASync()
+        public async Task RollBackTransactionAsync()
         {
             if (transaction is null)
             {

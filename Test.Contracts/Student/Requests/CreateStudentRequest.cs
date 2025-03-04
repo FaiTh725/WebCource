@@ -1,6 +1,6 @@
-﻿namespace Test.Contracts.Student
+﻿namespace Test.Contracts.Student.Requests
 {
-    public class StudentCreated
+    public class CreateStudentRequest
     {
         public int GroupNumber { get; set; }
 
