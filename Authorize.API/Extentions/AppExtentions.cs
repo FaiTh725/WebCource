@@ -1,6 +1,7 @@
 ﻿using Application.Shared.Exceptions;
 using Authorize.API.Helpers.Conf;
 using Authorize.Application;
+using Authorize.Application.Saga.RegisterUser;
 using MassTransit;
 
 namespace Authorize.API.Extentions
@@ -26,8 +27,8 @@ namespace Authorize.API.Extentions
             {
                 conf.SetKebabCaseEndpointNameFormatter();
 
-                //conf.AddSagaStateMachine<RegisterUserSaga, RegisterUserStateData>()
-                //.InMemoryRepository();
+                conf.AddSagaStateMachine<RegisterUserSaga, RegisterUserState>()
+                .InMemoryRepository();
 
                 //conf.AddConsumer<CreateUserConsumer>();
                 //conf.AddConsumer<CreateStudentConsumer>();

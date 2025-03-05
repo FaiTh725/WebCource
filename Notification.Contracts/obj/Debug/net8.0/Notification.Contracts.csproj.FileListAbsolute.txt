@@ -1,0 +1,12 @@
+C:\VSProjects\WebCource\backend\Notification.Contracts\bin\Debug\net8.0\Notification.Contracts.deps.json
+C:\VSProjects\WebCource\backend\Notification.Contracts\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Notification.Contracts\bin\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.sourcelink.json
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\refint\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Notification.Contracts\obj\Debug\net8.0\ref\Notification.Contracts.dll

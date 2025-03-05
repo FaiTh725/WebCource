@@ -1,4 +1,5 @@
 ﻿using Application.Shared.Exceptions;
+using Authorize.Application.Events;
 using Authorize.Application.Interfaces;
 using Authorize.Domain.Repositories;
 using MassTransit;
@@ -15,15 +16,21 @@ namespace Authorize.Application.Commands.User.Register
         private readonly IUnitOfWork unitOfWork;
         private readonly IHashService hashService;
         private readonly IRequestClient<CreateStudentRequest> client;
+        private readonly IPublishEndpoint publishEndpoint;
+        private readonly IBus bus;
 
         public RegisterUserHandler(
             IUnitOfWork unitOfWork,
             IHashService hashService,
-            IRequestClient<CreateStudentRequest> client)
+            IRequestClient<CreateStudentRequest> client,
+            IPublishEndpoint publishEndpoint,
+            IBus bus)
         {
             this.unitOfWork = unitOfWork;
             this.hashService = hashService;
             this.client = client;
+            this.publishEndpoint = publishEndpoint;
+            this.bus = bus;
         }
 
         public async Task<long> Handle(
@@ -72,9 +79,9 @@ namespace Authorize.Application.Commands.User.Register
                 Email = request.Email,
                 Name = request.Name,
                 GroupNumber = request.Group
-            });
+            }, cancellationToken);
 
-            if(!responseCreateStudent.Message.IsSuccess)
+            if (!responseCreateStudent.Message.IsSuccess)
             {
                 await unitOfWork.RollBackTransactionAsync();
                 throw new BadRequestApiException(responseCreateStudent.Message.ErrorMessage);
@@ -84,6 +91,14 @@ namespace Authorize.Application.Commands.User.Register
                 await unitOfWork.SaveChangesAsync();
                 await unitOfWork.CommitTransactionAsync();
             }
+
+            await bus.Publish(new UserRegistered
+            {
+                CorrelationId = Guid.NewGuid(),
+                Email = request.Email,
+                Message = "Thank you for registering on the FaITh Tests website",
+                Subject = "Welcome"
+            }, cancellationToken);
 
             return newUser.Id;
         }

@@ -1,0 +1,16 @@
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.csproj.AssemblyReference.cache
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.sourcelink.json
+C:\VSProjects\WebCource\backend\Notification.Application\bin\Debug\net8.0\Notification.Application.deps.json
+C:\VSProjects\WebCource\backend\Notification.Application\bin\Debug\net8.0\Notification.Application.dll
+C:\VSProjects\WebCource\backend\Notification.Application\bin\Debug\net8.0\Notification.Application.pdb
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.dll
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\refint\Notification.Application.dll
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notification.Application.pdb
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\ref\Notification.Application.dll
+C:\VSProjects\WebCource\backend\Notification.Application\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Notification.Application\bin\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Notification.Application\obj\Debug\net8.0\Notifica.1404CAA7.Up2Date

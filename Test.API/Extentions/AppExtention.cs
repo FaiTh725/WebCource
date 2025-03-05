@@ -59,6 +59,7 @@ namespace Test.API.Extentions
             this IServiceCollection services,
             IConfiguration configuration)
         {
+
             var rabbitMqConf = configuration
                 .GetSection("RabbitMq")
                 .Get<RabbitMqConf>() ??

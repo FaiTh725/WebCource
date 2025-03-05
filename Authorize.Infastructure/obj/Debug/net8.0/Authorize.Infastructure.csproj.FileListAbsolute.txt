@@ -20,3 +20,5 @@ C:\VSProjects\WebCource\backend\Authorize.Infastructure\bin\Debug\net8.0\Applica
 C:\VSProjects\WebCource\backend\Authorize.Infastructure\obj\Debug\net8.0\Authorize.Infastructure.sourcelink.json
 C:\VSProjects\WebCource\backend\Authorize.Infastructure\bin\Debug\net8.0\Test.Contracts.dll
 C:\VSProjects\WebCource\backend\Authorize.Infastructure\bin\Debug\net8.0\Test.Contracts.pdb
+C:\VSProjects\WebCource\backend\Authorize.Infastructure\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.Infastructure\bin\Debug\net8.0\Notification.Contracts.pdb

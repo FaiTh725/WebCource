@@ -26,6 +26,9 @@
     <Reference Include="Application.Shared">
       <HintPath>..\Application.Shared\bin\Debug\net8.0\Application.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="Notification.Contracts">
+      <HintPath>..\Notification.Contracts\bin\Debug\net8.0\Notification.Contracts.dll</HintPath>
+    </Reference>
     <Reference Include="Test.Contracts">
       <HintPath>..\Test.Contracts\bin\Debug\net8.0\Test.Contracts.dll</HintPath>
     </Reference>

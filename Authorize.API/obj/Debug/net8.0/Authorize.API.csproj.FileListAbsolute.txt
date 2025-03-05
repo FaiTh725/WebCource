@@ -195,3 +195,5 @@ C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\MassTransit.Rabbi
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.pdb
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Notification.Contracts.pdb

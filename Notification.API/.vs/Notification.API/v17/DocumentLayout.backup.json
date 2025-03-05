@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\notification.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:notification.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\controllers\\testemailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:controllers\\testemailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|c:\\vsprojects\\webcource\\backend\\notification.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{950CC416-A342-4D2E-BB74-AD84059ECB27}|Notification.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39903C92-F049-4D1D-A5F9-3CD9D1E9004F}|..\\Notification.Application\\Notification.Application.csproj|c:\\vsprojects\\webcource\\backend\\notification.application\\consumers\\email\\sentemailconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008C745B-F185-42BA-96C7-5E263C9DB527}|..\\Notification.Contracts\\Notification.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\notification.contracts\\email\\requests\\sendemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39903C92-F049-4D1D-A5F9-3CD9D1E9004F}|..\\Notification.Application\\Notification.Application.csproj|c:\\vsprojects\\webcource\\backend\\notification.application\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BD10F8-1828-45FD-BE4F-7B83C67CAE8D}|..\\Notification.Infastructure\\Notification.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\notification.infastructure\\implementation\\emailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008C745B-F185-42BA-96C7-5E263C9DB527}|..\\Notification.Contracts\\Notification.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\notification.contracts\\notification.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39903C92-F049-4D1D-A5F9-3CD9D1E9004F}|..\\Notification.Application\\Notification.Application.csproj|c:\\vsprojects\\webcource\\backend\\notification.application\\notification.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BD10F8-1828-45FD-BE4F-7B83C67CAE8D}|..\\Notification.Infastructure\\Notification.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\notification.infastructure\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BD10F8-1828-45FD-BE4F-7B83C67CAE8D}|..\\Notification.Infastructure\\Notification.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\notification.infastructure\\helpers\\email\\smtpsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BD10F8-1828-45FD-BE4F-7B83C67CAE8D}|..\\Notification.Infastructure\\Notification.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\notification.infastructure\\notification.infastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppExtentions.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Extentions\\AppExtentions.cs",
+              "RelativeDocumentMoniker": "Extentions\\AppExtentions.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Extentions\\AppExtentions.cs",
+              "RelativeToolTip": "Extentions\\AppExtentions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:08:33.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Notification.API",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Notification.API.csproj",
+              "RelativeDocumentMoniker": "Notification.API.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Notification.API.csproj",
+              "RelativeToolTip": "Notification.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-05T19:04:51.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RabbitMqConf.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Helpers\\Conf\\RabbitMqConf.cs",
+              "RelativeDocumentMoniker": "Helpers\\Conf\\RabbitMqConf.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Helpers\\Conf\\RabbitMqConf.cs",
+              "RelativeToolTip": "Helpers\\Conf\\RabbitMqConf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:05:13.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T19:04:33.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestEmailController.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Controllers\\TestEmailController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestEmailController.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Controllers\\TestEmailController.cs",
+              "RelativeToolTip": "Controllers\\TestEmailController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:47:51.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:17:08.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SentEmailConsumer.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Consumers\\Email\\SentEmailConsumer.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Application\\Consumers\\Email\\SentEmailConsumer.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Consumers\\Email\\SentEmailConsumer.cs",
+              "RelativeToolTip": "..\\Notification.Application\\Consumers\\Email\\SentEmailConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T17:56:55.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Infastructure\\Startup.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Startup.cs",
+              "RelativeToolTip": "..\\Notification.Infastructure\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:45:49.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SmtpSetting.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Helpers\\Email\\SmtpSetting.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Infastructure\\Helpers\\Email\\SmtpSetting.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Helpers\\Email\\SmtpSetting.cs",
+              "RelativeToolTip": "..\\Notification.Infastructure\\Helpers\\Email\\SmtpSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:21:33.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailNotificationService.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Implementation\\EmailNotificationService.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Infastructure\\Implementation\\EmailNotificationService.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Implementation\\EmailNotificationService.cs",
+              "RelativeToolTip": "..\\Notification.Infastructure\\Implementation\\EmailNotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:32:32.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SendEmailRequest.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Contracts\\Email\\Requests\\SendEmailRequest.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Contracts\\Email\\Requests\\SendEmailRequest.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Contracts\\Email\\Requests\\SendEmailRequest.cs",
+              "RelativeToolTip": "..\\Notification.Contracts\\Email\\Requests\\SendEmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:33:06.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Notification.Infastructure.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Notification.Infastructure.csproj",
+              "RelativeDocumentMoniker": "..\\Notification.Infastructure\\Notification.Infastructure.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Infastructure\\Notification.Infastructure.csproj",
+              "RelativeToolTip": "..\\Notification.Infastructure\\Notification.Infastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-04T19:29:52.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Notification.Contracts.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Contracts\\Notification.Contracts.csproj",
+              "RelativeDocumentMoniker": "..\\Notification.Contracts\\Notification.Contracts.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Contracts\\Notification.Contracts.csproj",
+              "RelativeToolTip": "..\\Notification.Contracts\\Notification.Contracts.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-04T19:32:14.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "..\\Notification.Application\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "..\\Notification.Application\\Interfaces\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:30:15.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Notification.Application.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Notification.Application.csproj",
+              "RelativeDocumentMoniker": "..\\Notification.Application\\Notification.Application.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Notification.Application\\Notification.Application.csproj",
+              "RelativeToolTip": "..\\Notification.Application\\Notification.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-04T19:29:17.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

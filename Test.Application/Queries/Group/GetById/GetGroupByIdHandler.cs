@@ -1,6 +1,6 @@
 ﻿using Application.Shared.Exceptions;
 using MediatR;
-using Test.Application.Consumers.Group;
+using Test.Application.Contracts.Group;
 using Test.Domain.Repositories;
 
 namespace Test.Application.Queries.Group.GetById
