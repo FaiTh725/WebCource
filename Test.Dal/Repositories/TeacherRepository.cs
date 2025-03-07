@@ -1,5 +1,4 @@
-﻿using CSharpFunctionalExtensions;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Test.Domain.Entities;
 using Test.Domain.Repositories;
 
@@ -23,15 +22,18 @@ namespace Test.Dal.Repositories
             return teacherEntity.Entity;
         }
 
-        public async Task<Result<Teacher>> GetTeacher(string email)
+        public async Task<Teacher?> GetTeacher(string email)
         {
             var teacher = await context.Teachers
                 .FirstOrDefaultAsync(x => x.Email == email);
 
-            if(teacher is null)
-            {
-                return Result.Failure<Teacher>("Teacher doesnt found");
-            }
+            return teacher;
+        }
+
+        public async Task<Teacher?> GetTeacher(long id)
+        {
+            var teacher = await context.Teachers
+                .FirstOrDefaultAsync(x => x.Id == id);
 
             return teacher;
         }

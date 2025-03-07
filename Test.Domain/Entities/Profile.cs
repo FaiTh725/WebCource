@@ -1,9 +1,9 @@
-﻿using CSharpFunctionalExtensions;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using Test.Domain.Primitives;
 
 namespace Test.Domain.Entities
 {
-    public abstract class Profile : Entity
+    public abstract class Profile : DomainEventEntity
     {
         public const int MAX_NAME_LENGTH = 50;
 

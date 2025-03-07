@@ -14,7 +14,8 @@
           "Test.Dal": "1.0.0",
           "Test.Domain": "1.0.0",
           "Test.Infastructure": "1.0.0",
-          "Application.Shared": "1.0.0.0"
+          "Application.Shared": "1.0.0.0",
+          "Authorize.Contracts": "1.0.0.0"
         },
         "runtime": {
           "Test.API.dll": {}
@@ -1224,7 +1225,8 @@
       },
       "Test.Domain/1.0.0": {
         "dependencies": {
-          "CSharpFunctionalExtensions": "3.5.1"
+          "CSharpFunctionalExtensions": "3.5.1",
+          "MediatR": "12.4.1"
         },
         "runtime": {
           "Test.Domain.dll": {
@@ -1244,6 +1246,22 @@
       "Application.Shared/1.0.0.0": {
         "runtime": {
           "Application.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Authorize.Contracts/1.0.0.0": {
+        "runtime": {
+          "Authorize.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Notification.Contracts/1.0.0.0": {
+        "runtime": {
+          "Notification.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1941,6 +1959,16 @@
       "sha512": ""
     },
     "Application.Shared/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Authorize.Contracts/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notification.Contracts/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

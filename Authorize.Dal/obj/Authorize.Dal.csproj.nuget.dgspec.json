@@ -141,6 +141,10 @@
             "CSharpFunctionalExtensions": {
               "target": "Package",
               "version": "[3.4.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
             }
           },
           "imports": [

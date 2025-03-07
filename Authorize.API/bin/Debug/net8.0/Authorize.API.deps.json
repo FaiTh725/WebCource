@@ -1215,6 +1215,7 @@
       },
       "Authorize.Application/1.0.0": {
         "dependencies": {
+          "Authorize.Contracts": "1.0.0",
           "Authorize.Domain": "1.0.0",
           "BCrypt.Net-Next": "4.0.3",
           "MassTransit.RabbitMQ": "8.3.6",
@@ -1222,6 +1223,14 @@
         },
         "runtime": {
           "Authorize.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Authorize.Contracts/1.0.0": {
+        "runtime": {
+          "Authorize.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1244,7 +1253,8 @@
       },
       "Authorize.Domain/1.0.0": {
         "dependencies": {
-          "CSharpFunctionalExtensions": "3.4.3"
+          "CSharpFunctionalExtensions": "3.4.3",
+          "MediatR": "12.4.1"
         },
         "runtime": {
           "Authorize.Domain.dll": {
@@ -1965,6 +1975,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Authorize.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Authorize.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

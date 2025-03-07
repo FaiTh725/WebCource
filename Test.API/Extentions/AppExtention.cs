@@ -6,6 +6,8 @@ using System.Text;
 using Test.API.Helpers.Conf;
 using Test.Application;
 using Test.Application.Consumers.Student;
+using Test.Application.Consumers.Teacher;
+using Test.Application.Saga.CreateTeacher;
 
 namespace Test.API.Extentions
 {
@@ -69,7 +71,11 @@ namespace Test.API.Extentions
             {
                 conf.SetKebabCaseEndpointNameFormatter();
 
+                conf.AddSagaStateMachine<CreateTeacherSaga, CreateTeacherState>()
+                .InMemoryRepository();
+
                 conf.AddConsumer<StudentCreatedConsumer>();
+                conf.AddConsumer<CreatedTeacherConsumer>();
                 //conf.AddConsumer<TestCreatedStudentConsumer>();
 
                 conf.UsingRabbitMq((context, configurator) =>

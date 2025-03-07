@@ -19,15 +19,15 @@ namespace Authorize.Application.Queries.User.GetById
         {
             var user = await userRepository.GetUser(request.Id);
 
-            if (user.IsFailure)
+            if (user is null)
             {
                 throw new NotFoundApiException("User with this id doesnt exist");
             }
 
             return new UserResponse 
             { 
-                Email = user.Value.Email,
-                RoleName = user.Value.Role.RoleName
+                Email = user.Email,
+                RoleName = user.Role.RoleName
             };
         }
     }

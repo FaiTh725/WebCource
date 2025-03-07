@@ -1,5 +1,4 @@
-﻿using CSharpFunctionalExtensions;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Test.Domain.Entities;
 using Test.Domain.Repositories;
 
@@ -22,28 +21,18 @@ namespace Test.Dal.Repositories
             return groupEntity.Entity;
         }
 
-        public async Task<Result<StudentGroup>> GetGroup(int groupName)
+        public async Task<StudentGroup?> GetGroup(int groupName)
         {
             var group = await context.Groups
                 .FirstOrDefaultAsync(x => x.GroupName == groupName);
 
-            if(group is null)
-            {
-                return Result.Failure<StudentGroup>("Group doesnt Found");
-            }
-
             return group;
         }
 
-        public async Task<Result<StudentGroup>> GetGroup(long id)
+        public async Task<StudentGroup?> GetGroup(long id)
         {
             var group = await context.Groups
                 .FirstOrDefaultAsync(x => x.Id == id);
-
-            if (group is null)
-            {
-                return Result.Failure<StudentGroup>("Group doesnt Found");
-            }
 
             return group;
         }

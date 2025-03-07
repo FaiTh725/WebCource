@@ -3,100 +3,81 @@
   "WorkspaceRootPath": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\consumers\\user\\changeuserroleconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\changerole\\changerolehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\changerole\\changerolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\events\\userregistered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\queries\\user\\getbyid\\getuserbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\queries\\user\\getbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\login\\loginuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\saga\\registeruser\\registerusersaga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\saga\\registeruser\\registeruserstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{485DB46E-70B5-4A2D-B0B4-76D777A9B015}|..\\Authorize.Domain\\Authorize.Domain.csproj|c:\\vsprojects\\webcource\\backend\\authorize.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\authorize.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\contacts\\user\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:helpers\\conf\\rabbitmqconf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\register\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\login\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:extentions\\appextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\register\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}|..\\Authorize.Contracts\\Authorize.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\authorize.contracts\\events\\successchangerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}|..\\Authorize.Contracts\\Authorize.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\authorize.contracts\\events\\failchangerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEF0CDF2-5B67-401A-9A7E-C0C909651153}|..\\Authorize.Infastructure\\Authorize.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\authorize.infastructure\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}|..\\Authorize.Contracts\\Authorize.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\authorize.contracts\\authorize.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}|..\\Authorize.Contracts\\Authorize.Contracts.csproj|c:\\vsprojects\\webcource\\backend\\authorize.contracts\\user\\requests\\changeuserrolerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325F2E92-5625-4B8E-BF1E-55C5BA0A5668}|..\\Authorize.Dal\\Authorize.Dal.csproj|c:\\vsprojects\\webcource\\backend\\authorize.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\saga\\registeruser\\registeruserstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\queries\\user\\getbyid\\getuserbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485DB46E-70B5-4A2D-B0B4-76D777A9B015}|..\\Authorize.Domain\\Authorize.Domain.csproj|c:\\vsprojects\\webcource\\backend\\authorize.domain\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485DB46E-70B5-4A2D-B0B4-76D777A9B015}|..\\Authorize.Domain\\Authorize.Domain.csproj|c:\\vsprojects\\webcource\\backend\\authorize.domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\login\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{485DB46E-70B5-4A2D-B0B4-76D777A9B015}|..\\Authorize.Domain\\Authorize.Domain.csproj|c:\\vsprojects\\webcource\\backend\\authorize.domain\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEF0CDF2-5B67-401A-9A7E-C0C909651153}|..\\Authorize.Infastructure\\Authorize.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\authorize.infastructure\\implementations\\jwtuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{485DB46E-70B5-4A2D-B0B4-76D777A9B015}|..\\Authorize.Domain\\Authorize.Domain.csproj|c:\\vsprojects\\webcource\\backend\\authorize.domain\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\contacts\\user\\generateusertoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\commands\\user\\login\\loginuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\middlewares\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:middlewares\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEF0CDF2-5B67-401A-9A7E-C0C909651153}|..\\Authorize.Infastructure\\Authorize.Infastructure.csproj|c:\\vsprojects\\webcource\\backend\\authorize.infastructure\\backgroundservices\\initializeroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\contacts\\token\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|c:\\vsprojects\\webcource\\backend\\authorize.api\\authorize.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F335FF40-820B-432F-B939-B2ACBECB70B4}|Authorize.API.csproj|solutionrelative:authorize.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DC9B79F0-FE3C-49DA-8D42-456944C2D0EE}|..\\Authorize.Application\\Authorize.Application.csproj|c:\\vsprojects\\webcource\\backend\\authorize.application\\authorize.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +87,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -127,376 +108,319 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegisterUserSaga.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCQAAAAnAAAAAAAAAA==",
+              "Title": "RegisterUserHandler.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwFUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T18:15:28.991Z",
+              "WhenOpened": "2025-03-06T22:46:11.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetUserByIdQuery.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdQuery.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdQuery.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdQuery.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T23:02:42.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetUserByIdHandler.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T23:02:51.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UserRegistered.cs",
               "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Events\\UserRegistered.cs",
               "RelativeDocumentMoniker": "..\\Authorize.Application\\Events\\UserRegistered.cs",
               "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Events\\UserRegistered.cs",
               "RelativeToolTip": "..\\Authorize.Application\\Events\\UserRegistered.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:32:36.609Z",
+              "WhenOpened": "2025-03-07T11:08:29.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegisterUserHandler.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs*",
-              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserHandler.cs*",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAowGYAAAAeAAAAAAAAAA==",
+              "Title": "ChangeUserRoleConsumer.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Consumers\\User\\ChangeUserRoleConsumer.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Consumers\\User\\ChangeUserRoleConsumer.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Consumers\\User\\ChangeUserRoleConsumer.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Consumers\\User\\ChangeUserRoleConsumer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:42:36.122Z",
+              "WhenOpened": "2025-03-06T22:56:21.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangeRoleCommand.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleCommand.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleCommand.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleCommand.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:55:18.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangeRoleHandler.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleHandler.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleHandler.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleHandler.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\ChangeRole\\ChangeRoleHandler.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:55:18.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RegisterUserState.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T18:15:28.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Authorize.Application.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Authorize.Application.csproj",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Authorize.Application.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Authorize.Application.csproj",
-              "RelativeToolTip": "..\\Authorize.Application\\Authorize.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-04T23:07:13.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserResponse.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\User\\UserResponse.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Contacts\\User\\UserResponse.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\User\\UserResponse.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Contacts\\User\\UserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T23:02:34.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppExtentions.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Extentions\\AppExtentions.cs",
-              "RelativeDocumentMoniker": "Extentions\\AppExtentions.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Extentions\\AppExtentions.cs",
-              "RelativeToolTip": "Extentions\\AppExtentions.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwCsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:35:13.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RabbitMqConf.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Helpers\\Conf\\RabbitMqConf.cs",
-              "RelativeDocumentMoniker": "Helpers\\Conf\\RabbitMqConf.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Helpers\\Conf\\RabbitMqConf.cs",
-              "RelativeToolTip": "Helpers\\Conf\\RabbitMqConf.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:46:36.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterUserRequest.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:42:37.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginUserRequest.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T09:14:55.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Dal\\Repositories\\RoleRepository.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\RoleRepository.cs",
-              "RelativeToolTip": "..\\Authorize.Dal\\Repositories\\RoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T23:55:05.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Dal\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\Authorize.Dal\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T23:55:03.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAWwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:48:52.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Dal\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "..\\Authorize.Dal\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAYwAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T09:27:10.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthorizeController.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Controllers\\AuthorizeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthorizeController.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Controllers\\AuthorizeController.cs",
-              "RelativeToolTip": "Controllers\\AuthorizeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T18:48:38.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "JwtUserService.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\Implementations\\JwtUserService.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Infastructure\\Implementations\\JwtUserService.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\Implementations\\JwtUserService.cs",
-              "RelativeToolTip": "..\\Authorize.Infastructure\\Implementations\\JwtUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:48:48.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
-              "RelativeToolTip": "..\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:50:53.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AssemblyReference.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\AssemblyReference.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\AssemblyReference.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\AssemblyReference.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\AssemblyReference.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:55:36.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GenerateUserToken.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\User\\GenerateUserToken.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Contacts\\User\\GenerateUserToken.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\User\\GenerateUserToken.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Contacts\\User\\GenerateUserToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:57:19.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Dal\\AppDbContext.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Authorize.Dal\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:58:29.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IJwtService.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Interfaces\\IJwtService.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Interfaces\\IJwtService.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Interfaces\\IJwtService.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Interfaces\\IJwtService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:48:37.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "LoginUserHandler.cs",
               "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserHandler.cs",
               "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserHandler.cs",
               "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserHandler.cs",
               "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T22:48:13.911Z"
+              "WhenOpened": "2025-03-06T23:04:05.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Startup.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Startup.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Startup.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Startup.cs",
+              "DocumentIndex": 6,
+              "Title": "RegisterUserSaga.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserSaga.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:59:25.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "..\\Authorize.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:44:42.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Dal\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\Authorize.Dal\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAtwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:02:38.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Dal\\Repositories\\RoleRepository.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Dal\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "..\\Authorize.Dal\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:02:05.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T11:31:39.55Z"
+              "WhenOpened": "2025-03-07T19:22:09.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterUserRequest.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Register\\RegisterUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:46:10.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppExtentions.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Extentions\\AppExtentions.cs",
+              "RelativeDocumentMoniker": "Extentions\\AppExtentions.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Extentions\\AppExtentions.cs",
+              "RelativeToolTip": "Extentions\\AppExtentions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwB4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:06:43.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SuccessChangeRole.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Events\\SuccessChangeRole.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Contracts\\Events\\SuccessChangeRole.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Events\\SuccessChangeRole.cs",
+              "RelativeToolTip": "..\\Authorize.Contracts\\Events\\SuccessChangeRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:50:13.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FailChangeRole.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Events\\FailChangeRole.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Contracts\\Events\\FailChangeRole.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Events\\FailChangeRole.cs",
+              "RelativeToolTip": "..\\Authorize.Contracts\\Events\\FailChangeRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:50:12.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangeUserRoleRequest.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\User\\Requests\\ChangeUserRoleRequest.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Contracts\\User\\Requests\\ChangeUserRoleRequest.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\User\\Requests\\ChangeUserRoleRequest.cs",
+              "RelativeToolTip": "..\\Authorize.Contracts\\User\\Requests\\ChangeUserRoleRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:58:19.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\Startup.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Infastructure\\Startup.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\Startup.cs",
-              "RelativeToolTip": "..\\Authorize.Infastructure\\Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:49:30.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GlobalExceptionHandler.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Middlewares\\GlobalExceptionHandler.cs",
-              "RelativeDocumentMoniker": "Middlewares\\GlobalExceptionHandler.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Middlewares\\GlobalExceptionHandler.cs",
-              "RelativeToolTip": "Middlewares\\GlobalExceptionHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwDQAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:47:12.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "InitializeRoles.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\BackgroundServices\\InitializeRoles.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Infastructure\\BackgroundServices\\InitializeRoles.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Infastructure\\BackgroundServices\\InitializeRoles.cs",
-              "RelativeToolTip": "..\\Authorize.Infastructure\\BackgroundServices\\InitializeRoles.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:46:43.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "TokenResponse.cs",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\Token\\TokenResponse.cs",
-              "RelativeDocumentMoniker": "..\\Authorize.Application\\Contacts\\Token\\TokenResponse.cs",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Contacts\\Token\\TokenResponse.cs",
-              "RelativeToolTip": "..\\Authorize.Application\\Contacts\\Token\\TokenResponse.cs",
+              "Title": "RegisterUserState.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Saga\\RegisterUser\\RegisterUserState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T23:49:54.931Z"
+              "WhenOpened": "2025-03-07T11:30:17.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Authorize.API.csproj",
-              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Authorize.API.csproj",
-              "RelativeDocumentMoniker": "Authorize.API.csproj",
-              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.API\\Authorize.API.csproj",
-              "RelativeToolTip": "Authorize.API.csproj",
+              "DocumentIndex": 15,
+              "Title": "Authorize.Contracts.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Authorize.Contracts.csproj",
+              "RelativeDocumentMoniker": "..\\Authorize.Contracts\\Authorize.Contracts.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Contracts\\Authorize.Contracts.csproj",
+              "RelativeToolTip": "..\\Authorize.Contracts\\Authorize.Contracts.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-25T17:46:17.234Z",
+              "WhenOpened": "2025-03-06T22:57:39.525Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Entities\\Role.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "..\\Authorize.Domain\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:44:43.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetUserByIdHandler.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Queries\\User\\GetById\\GetUserByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:59:09.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "..\\Authorize.Domain\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:01:43.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginUserRequest.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
+              "RelativeToolTip": "..\\Authorize.Application\\Commands\\User\\Login\\LoginUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:04:04.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\Authorize.Domain\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:01:42.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "..\\Authorize.Domain\\Repositories\\IRoleRepository.cs",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Domain\\Repositories\\IRoleRepository.cs",
+              "RelativeToolTip": "..\\Authorize.Domain\\Repositories\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:01:34.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Authorize.Application.csproj",
+              "DocumentMoniker": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Authorize.Application.csproj",
+              "RelativeDocumentMoniker": "..\\Authorize.Application\\Authorize.Application.csproj",
+              "ToolTip": "C:\\VSProjects\\WebCource\\backend\\Authorize.Application\\Authorize.Application.csproj",
+              "RelativeToolTip": "..\\Authorize.Application\\Authorize.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-06T22:55:23.658Z"
             }
           ]
         }

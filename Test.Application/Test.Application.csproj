@@ -25,6 +25,12 @@
     <Reference Include="Application.Shared">
       <HintPath>..\Application.Shared\bin\Debug\net8.0\Application.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="Authorize.Contracts">
+      <HintPath>..\Authorize.Contracts\bin\Debug\net8.0\Authorize.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Notification.Contracts">
+      <HintPath>..\Notification.Contracts\bin\Debug\net8.0\Notification.Contracts.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

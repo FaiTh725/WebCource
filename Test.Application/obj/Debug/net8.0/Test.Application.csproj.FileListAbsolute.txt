@@ -18,3 +18,7 @@ C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.Applicati
 C:\VSProjects\WebCource\backend\Test.Application\obj\Debug\net8.0\Test.App.60018A54.Up2Date
 C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Test.Contracts.dll
 C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Test.Contracts.pdb
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Test.Application\bin\Debug\net8.0\Authorize.Contracts.pdb

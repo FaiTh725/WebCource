@@ -191,3 +191,7 @@ C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Microsoft.AspNetCore.A
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Test.Contracts.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Test.Contracts.pdb
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Notification.Contracts.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Authorize.Contracts.pdb

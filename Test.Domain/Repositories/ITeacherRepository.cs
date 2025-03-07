@@ -5,7 +5,9 @@ namespace Test.Domain.Repositories
 {
     public interface ITeacherRepository
     {
-        Task<Result<Teacher>> GetTeacher(string email);
+        Task<Teacher?> GetTeacher(string email);
+
+        Task<Teacher?> GetTeacher(long id);
 
         Task<Teacher> AddTeacher(Teacher teacher);
     }

@@ -1,6 +1,5 @@
 ﻿using Authorize.Domain.Entities;
 using Authorize.Domain.Repositories;
-using CSharpFunctionalExtensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Authorize.Dal.Repositories
@@ -22,32 +21,31 @@ namespace Authorize.Dal.Repositories
             return userEntity.Entity;
         }
 
-        public async Task<Result<User>> GetUser(string email)
+        public async Task<User?> GetUser(string email)
         {
             var user = await context.Users
                 .Include(x => x.Role)
                 .FirstOrDefaultAsync(x => x.Email == email);
 
-            if (user is null)
-            {
-                return Result.Failure<User>("User doesnt found");
-            }
-
             return user;
         }
 
-        public async Task<Result<User>> GetUser(long id)
+        public async Task<User?> GetUser(long id)
         {
             var user = await context.Users
                 .Include(x => x.Role)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if(user is null)
-            {
-                return Result.Failure<User>("User not found");
-            }
-
             return user;
+        }
+
+        public async Task UpdateUser(long userId, User userNewValue)
+        {
+            await context.Users
+                .Where(x => x.Id == userId)
+                .ExecuteUpdateAsync(setter => setter
+                .SetProperty(p => p.Role, userNewValue.Role)
+                .SetProperty(p => p.PasswordHash, userNewValue.PasswordHash));
         }
     }
 }

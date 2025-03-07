@@ -1,9 +1,11 @@
-﻿using CSharpFunctionalExtensions;
+﻿using Authorize.Domain.Events;
+using Authorize.Domain.Primitives;
+using CSharpFunctionalExtensions;
 using System.Text.RegularExpressions;
 
 namespace Authorize.Domain.Entities
 {
-    public class User : Entity
+    public class User : DomainEventEntity
     {
         public const int MAX_PASSWORD_LENGTH = 30;
         public const int MIN_PASSWORD_LENGTH = 5;
@@ -24,6 +26,13 @@ namespace Authorize.Domain.Entities
         {
             Email = email;
             PasswordHash = passwordHash;
+            Role = role;
+
+            RaiseDomainEvent(new UserRegisteredEvent { UserEmail = email });
+        }
+
+        public void SetRole(Role role)
+        {
             Role = role;
         }
 

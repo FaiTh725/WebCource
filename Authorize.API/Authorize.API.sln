@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorize.Infastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorize.Domain", "..\Authorize.Domain\Authorize.Domain.csproj", "{485DB46E-70B5-4A2D-B0B4-76D777A9B015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorize.Contracts", "..\Authorize.Contracts\Authorize.Contracts.csproj", "{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +41,15 @@ Global
 		{485DB46E-70B5-4A2D-B0B4-76D777A9B015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{485DB46E-70B5-4A2D-B0B4-76D777A9B015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{485DB46E-70B5-4A2D-B0B4-76D777A9B015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136F62B4-DDA4-4182-AA32-89A1C6D9E5C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68158815-5F47-4578-9EE9-E9D7419B30F1}
 	EndGlobalSection
 EndGlobal

@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Authorize.Contracts\Authorize.Contracts.csproj" />
     <ProjectReference Include="..\Authorize.Domain\Authorize.Domain.csproj" />
   </ItemGroup>
 

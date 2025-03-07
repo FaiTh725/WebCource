@@ -20,7 +20,7 @@ namespace Test.Application.Commands.Student.CreateStudent
             var student = await unitOfWork.StudentRepository
                 .GetStudent(request.Email);
 
-            if(student.IsSuccess)
+            if(student is not null)
             {
                 throw new ConflictApiException("Student already exist");
             }
@@ -28,7 +28,7 @@ namespace Test.Application.Commands.Student.CreateStudent
             var studentGroup = await unitOfWork.GroupRepository
                 .GetGroup(request.Group);
 
-            if(studentGroup.IsFailure)
+            if(studentGroup is null)
             {
                 throw new BadRequestApiException($"{request.Group} doesnt exist");
             }
@@ -36,7 +36,7 @@ namespace Test.Application.Commands.Student.CreateStudent
             var studentEntity = StudentEntity.Initialize(
                 request.Email,
                 request.Name,
-                studentGroup.Value);
+                studentGroup);
 
             if(studentEntity.IsFailure)
             {

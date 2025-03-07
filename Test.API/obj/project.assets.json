@@ -1926,7 +1926,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CSharpFunctionalExtensions": "3.5.1"
+          "CSharpFunctionalExtensions": "3.5.1",
+          "MediatR": "12.4.1"
         },
         "compile": {
           "bin/placeholder/Test.Domain.dll": {}

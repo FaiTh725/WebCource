@@ -1,4 +1,5 @@
 ﻿using CSharpFunctionalExtensions;
+using Test.Domain.Event;
 
 namespace Test.Domain.Entities
 {
@@ -14,7 +15,10 @@ namespace Test.Domain.Entities
             string name):
             base(email, name)
         {
-            
+            //RaiseDomainEvent(new TeacherRegisteredEvent 
+            //{ 
+            //    Email = email
+            //});
         }
 
         public static Result<Teacher> Initialize(

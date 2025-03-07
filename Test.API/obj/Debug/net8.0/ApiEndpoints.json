@@ -9,7 +9,23 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Test.Application.Commands.Group.CreateGroupCommand",
+        "Type": "Test.Application.Commands.Group.CreateGroup.CreateGroupCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TeacherController",
+    "Method": "AddTeacher",
+    "RelativePath": "api/Teacher/AddTeacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Teacher.CreateTeacher.CreateTeacherCommand",
         "IsRequired": true
       }
     ],

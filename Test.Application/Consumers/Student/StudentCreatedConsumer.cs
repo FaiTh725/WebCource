@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using Application.Shared.Results;
+using MassTransit;
 using MediatR;
 using Test.Application.Commands.Student.CreateStudent;
 using Test.Contracts.Student.Requests;
@@ -27,18 +28,12 @@ namespace Test.Application.Consumers.Student
                     Name = context.Message.Name
                 });
                 
-                await context.RespondAsync(new StudentCreatedResponse
-                {
-                    IsSuccess = true
-                });
+                await context.RespondAsync(BaseResult.SuccessResult());
             }
             catch(Exception ex)
             {
-                await context.RespondAsync(new StudentCreatedResponse
-                {
-                    IsSuccess = false,
-                    ErrorMessage = ex.Message
-                });
+                await context.RespondAsync(BaseResult
+                    .FailureResult(ex.Message));
             }
         }
     }

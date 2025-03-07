@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Test.Application.Commands.Group;
+using Test.Application.Commands.Group.CreateGroup;
 using Test.Application.Queries.Group.GetById;
 
 namespace Test.API.Controllers

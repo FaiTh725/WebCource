@@ -1,5 +1,4 @@
-﻿using CSharpFunctionalExtensions;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Test.Domain.Entities;
 using Test.Domain.Repositories;
 
@@ -23,15 +22,17 @@ namespace Test.Dal.Repositories
             return studentEntity.Entity;
         }
 
-        public async Task<Result<Student>> GetStudent(string email)
+        public async Task DeleteStudent(string email)
+        {
+            await context.Students
+                .Where(x => x.Email == email)
+                .ExecuteDeleteAsync();
+        }
+
+        public async Task<Student?> GetStudent(string email)
         {
             var student = await context.Students
                 .FirstOrDefaultAsync(x => x.Email == email);
-
-            if(student is null)
-            {
-                return Result.Failure<Student>("Student doesnt found");
-            }
 
             return student;
         }

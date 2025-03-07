@@ -1,0 +1,12 @@
+C:\VSProjects\WebCource\backend\Authorize.Contracts\bin\Debug\net8.0\Authorize.Contracts.deps.json
+C:\VSProjects\WebCource\backend\Authorize.Contracts\bin\Debug\net8.0\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.Contracts\bin\Debug\net8.0\Authorize.Contracts.pdb
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.AssemblyInfoInputs.cache
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.AssemblyInfo.cs
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.csproj.CoreCompileInputs.cache
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.sourcelink.json
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\refint\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\Authorize.Contracts.pdb
+C:\VSProjects\WebCource\backend\Authorize.Contracts\obj\Debug\net8.0\ref\Authorize.Contracts.dll

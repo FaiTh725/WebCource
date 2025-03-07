@@ -19,15 +19,15 @@ namespace Test.Application.Queries.Group.GetById
             var group = await unitOfWork.GroupRepository
                 .GetGroup(request.Id);
 
-            if(group.IsFailure)
+            if(group is null)
             {
-                throw new NotFoundApiException(group.Error);
+                throw new NotFoundApiException("Group doesnt exist");
             }
 
             return new GroupResponse
             {
-                Id = group.Value.Id,
-                GroupName = group.Value.GroupName
+                Id = group.Id,
+                GroupName = group.GroupName
             };
         }
     }

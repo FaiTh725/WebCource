@@ -502,6 +502,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Authorize.Contracts": "1.0.0",
           "Authorize.Domain": "1.0.0",
           "BCrypt.Net-Next": "4.0.3",
           "MassTransit.RabbitMQ": "8.3.6",
@@ -514,11 +515,22 @@
           "bin/placeholder/Authorize.Application.dll": {}
         }
       },
+      "Authorize.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Authorize.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authorize.Contracts.dll": {}
+        }
+      },
       "Authorize.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CSharpFunctionalExtensions": "3.4.3"
+          "CSharpFunctionalExtensions": "3.4.3",
+          "MediatR": "12.4.1"
         },
         "compile": {
           "bin/placeholder/Authorize.Domain.dll": {}
@@ -1287,6 +1299,11 @@
       "type": "project",
       "path": "../Authorize.Application/Authorize.Application.csproj",
       "msbuildProject": "../Authorize.Application/Authorize.Application.csproj"
+    },
+    "Authorize.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Authorize.Contracts/Authorize.Contracts.csproj",
+      "msbuildProject": "../Authorize.Contracts/Authorize.Contracts.csproj"
     },
     "Authorize.Domain/1.0.0": {
       "type": "project",

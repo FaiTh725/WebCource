@@ -9,3 +9,4 @@ C:\VSProjects\WebCource\backend\Application.Shared\obj\Debug\net8.0\Application.
 C:\VSProjects\WebCource\backend\Application.Shared\obj\Debug\net8.0\refint\Application.Shared.dll
 C:\VSProjects\WebCource\backend\Application.Shared\obj\Debug\net8.0\Application.Shared.pdb
 C:\VSProjects\WebCource\backend\Application.Shared\obj\Debug\net8.0\ref\Application.Shared.dll
+C:\VSProjects\WebCource\backend\Application.Shared\obj\Debug\net8.0\Application.Shared.sourcelink.json

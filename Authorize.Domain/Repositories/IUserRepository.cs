@@ -1,5 +1,4 @@
 ﻿using Authorize.Domain.Entities;
-using CSharpFunctionalExtensions;
 
 namespace Authorize.Domain.Repositories
 {
@@ -7,8 +6,10 @@ namespace Authorize.Domain.Repositories
     {
         Task<User> AddUser(User user);
 
-        Task<Result<User>> GetUser(string email);
+        Task<User?> GetUser(string email);
 
-        Task<Result<User>> GetUser(long id);
+        Task<User?> GetUser(long id);
+
+        Task UpdateUser(long userId, User userNewValue);
     }
 }

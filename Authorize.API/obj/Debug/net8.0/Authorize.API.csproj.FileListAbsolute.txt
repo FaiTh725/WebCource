@@ -197,3 +197,5 @@ C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.dl
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Test.Contracts.pdb
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Notification.Contracts.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Notification.Contracts.pdb
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Authorize.Contracts.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\Authorize.Contracts.pdb

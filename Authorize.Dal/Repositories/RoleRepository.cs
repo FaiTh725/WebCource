@@ -1,6 +1,5 @@
 ﻿using Authorize.Domain.Entities;
 using Authorize.Domain.Repositories;
-using CSharpFunctionalExtensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Authorize.Dal.Repositories
@@ -22,17 +21,13 @@ namespace Authorize.Dal.Repositories
             return roleEntity.Entity;
         }
 
-        public async Task<Result<Role>> GetRole(string roleName)
+        public async Task<Role?> GetRole(string roleName)
         {
             var role = await context.Roles
                 .FirstOrDefaultAsync(x => x.RoleName == roleName);
 
-            if (role is null)
-            {
-                return Result.Failure<Role>("Role doesnt found");
-            }
 
-            return Result.Success(role);
+            return role;
         }
 
         public IQueryable<Role> GetRoles()

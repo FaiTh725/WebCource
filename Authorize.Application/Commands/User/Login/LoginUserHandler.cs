@@ -1,9 +1,7 @@
 ﻿using Application.Shared.Exceptions;
-using Authorize.Application.Contacts.Token;
 using Authorize.Application.Interfaces;
 using Authorize.Domain.Repositories;
 using MediatR;
-using UserEntity = Authorize.Domain.Entities.User;
 
 namespace Authorize.Application.Commands.User.Login
 {
@@ -25,19 +23,19 @@ namespace Authorize.Application.Commands.User.Login
             var user = await unitOfWork.UserRepository
                 .GetUser(request.Email);
 
-            if(user.IsFailure)
+            if(user is null)
             {
                 throw new NotFoundApiException("Email is not exist");
             }
 
             if (!hashService.VerifyHash(
                 request.Password,
-                user.Value.PasswordHash))
+                user.PasswordHash))
             {
                 throw new BadRequestApiException("Invaliad Email Or Password");
             }
 
-            return user.Value.Id;
+            return user.Id;
         }
     }
 }
