@@ -57,6 +57,7 @@ namespace Test.API.Extentions
             services.AddAuthorization();
         }
 
+        // TODO: Move into infastructure layer
         public static void AddRabbitMq(
             this IServiceCollection services,
             IConfiguration configuration)
@@ -76,7 +77,6 @@ namespace Test.API.Extentions
 
                 conf.AddConsumer<StudentCreatedConsumer>();
                 conf.AddConsumer<CreatedTeacherConsumer>();
-                //conf.AddConsumer<TestCreatedStudentConsumer>();
 
                 conf.UsingRabbitMq((context, configurator) =>
                 {

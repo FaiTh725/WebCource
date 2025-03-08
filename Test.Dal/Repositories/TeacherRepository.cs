@@ -4,7 +4,7 @@ using Test.Domain.Repositories;
 
 namespace Test.Dal.Repositories
 {
-    public class TeacherRepository : ITeacherRepository 
+    public class TeacherRepository : ITeacherRepository
     {
         private readonly AppDbContext context;
 
@@ -20,6 +20,13 @@ namespace Test.Dal.Repositories
                 .AddAsync(teacher);
 
             return teacherEntity.Entity;
+        }
+
+        public async Task DeleteTeacher(string email)
+        {
+            await context.Teachers
+                .Where(x => x.Email == email)
+                .ExecuteDeleteAsync();
         }
 
         public async Task<Teacher?> GetTeacher(string email)

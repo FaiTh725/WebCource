@@ -2,7 +2,7 @@
 {
     public class DataResult<T> : BaseResult
     {
-        private readonly T? value;
+        private T? value;
 
         public DataResult(T data)
             : base()
@@ -26,17 +26,9 @@
             return new DataResult<TRes>(value);
         }
 
-        public T Value
+        public T? Value
         {
-            get
-            {
-                if (!result)
-                {
-                    throw new InvalidOperationException("Get Value When Result Is Failure");
-                }
-
-                return value!;
-            }
+            get => result ? value : default;
         }
     }
 }

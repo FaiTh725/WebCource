@@ -1,9 +1,10 @@
-﻿namespace Application.Shared.Results
+﻿
+namespace Application.Shared.Results
 {
     public class BaseResult
     {
-        protected readonly string error;
-        protected readonly bool result;
+        protected string error;
+        protected bool result;
 
         public  BaseResult()
         {
@@ -31,17 +32,9 @@
 
         public bool IsFailure { get => result == false; }
     
-        public string Error
+        public string? Error
         {
-            get
-            {
-                if (result)
-                {
-                    throw new InvalidOperationException("Get error when result is true");
-                }
-
-                return error;
-            }
+            get => result ? null : error;
         }
     }
 }

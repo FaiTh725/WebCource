@@ -10,5 +10,7 @@ namespace Test.Domain.Repositories
         Task<Teacher?> GetTeacher(long id);
 
         Task<Teacher> AddTeacher(Teacher teacher);
+
+        Task DeleteTeacher(string email);
     }
 }

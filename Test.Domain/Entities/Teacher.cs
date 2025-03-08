@@ -15,10 +15,10 @@ namespace Test.Domain.Entities
             string name):
             base(email, name)
         {
-            //RaiseDomainEvent(new TeacherRegisteredEvent 
-            //{ 
-            //    Email = email
-            //});
+            RaiseDomainEvent(new TeacherRegisteredEvent
+            {
+                Email = email
+            });
         }
 
         public static Result<Teacher> Initialize(

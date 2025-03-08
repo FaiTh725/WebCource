@@ -27,7 +27,6 @@ namespace Test.Application.Commands.Student.DeleteStudent
             await unitOfWork.StudentRepository
                 .DeleteStudent(request.StudentEmail);
 
-
             await unitOfWork.SaveChangesAsync();
         }
     }

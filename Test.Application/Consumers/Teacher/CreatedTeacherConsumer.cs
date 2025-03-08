@@ -2,6 +2,7 @@
 using MediatR;
 using Test.Application.Commands.Teacher.CreateTeacher;
 using Test.Application.Events.Teacher;
+using Test.Application.Queries.Student.GetStudentByEmail;
 
 namespace Test.Application.Consumers.Teacher
 {
@@ -22,6 +23,11 @@ namespace Test.Application.Consumers.Teacher
         {
             try
             {
+                var existStudent = await mediator.Send(new GetStudentByEmailQuery
+                {
+                    Email = context.Message.Email
+                });
+
                 await mediator.Send(new CreateTeacherCommand
                 {
                     Email = context.Message.Email
@@ -29,7 +35,9 @@ namespace Test.Application.Consumers.Teacher
 
                 await bus.Publish(new SuccessCreateTeacher
                 {
-                    Email = context.Message.Email
+                    Email = context.Message.Email,
+                    Name = existStudent.Name,
+                    GroupName = existStudent.GroupName
                 });
             }
             catch(Exception ex)

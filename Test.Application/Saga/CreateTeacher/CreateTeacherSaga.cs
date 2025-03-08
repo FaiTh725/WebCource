@@ -1,6 +1,7 @@
 ﻿using Authorize.Contracts.Events;
 using Authorize.Contracts.User.Requests;
 using MassTransit;
+using Microsoft.Extensions.Logging;
 using Test.Application.Events.Teacher;
 
 namespace Test.Application.Saga.CreateTeacher
@@ -8,8 +9,9 @@ namespace Test.Application.Saga.CreateTeacher
     public class CreateTeacherSaga : 
         MassTransitStateMachine<CreateTeacherState>
     {
-        public CreateTeacherSaga()
+        public CreateTeacherSaga(ILogger<CreateTeacherSaga> logger)
         {
+
             InstanceState(x => x.CurrentState);
 
             Event(() => StartCreateTeacher, x => x.CorrelateBy(m => m.Email, context => context.Message.Email).SelectId(ctx => NewId.NextGuid()));
@@ -24,7 +26,7 @@ namespace Test.Application.Saga.CreateTeacher
                 When(StartCreateTeacher)
                 .Then(context =>
                 {
-                    Console.WriteLine("Start Creating Teacher");
+                    logger.LogInformation("Start Creating Teacher");
                     context.Saga.Email = context.Message.Email;
                 })
                 .TransitionTo(CreatingTeacher));
@@ -33,8 +35,10 @@ namespace Test.Application.Saga.CreateTeacher
                 When(SuccessCreateTeacher)
                 .Then(context =>
                 {
-                    Console.WriteLine("Teacher Created");
+                    logger.LogInformation("Teacher Created");
                     context.Saga.Email = context.Message.Email;
+                    context.Saga.Name = context.Message.Name;
+                    context.Saga.GroupName = context.Message.GroupName;
                 })
                 .PublishAsync(context => context.Init<ChangeUserRoleRequest>(new ChangeUserRoleRequest
                 {
@@ -45,7 +49,7 @@ namespace Test.Application.Saga.CreateTeacher
                 When(FailCreateTeacher)
                 .Then(context =>
                 {
-                    Console.WriteLine("Create Teacher With Error");
+                    logger.LogInformation("Create Teacher With Error");
                 })
                 .TransitionTo(Failed)
                 .Finalize());
@@ -54,15 +58,21 @@ namespace Test.Application.Saga.CreateTeacher
                 When(SuccessChangeRole)
                 .Then(context =>
                 {
-                    Console.WriteLine("Role Changed");
+                    logger.LogInformation("Role Changed");
                 })
                 .TransitionTo(Completed)
                 .Finalize(),
                 When(FailChangeRole)
                 .Then(context =>
                 {
-                    Console.WriteLine("Role Changed With Error");
+                    logger.LogInformation("Role Changed With Error");
                 })
+                .PublishAsync(context => context.Init<RollBackCreatTeacher>(new RollBackCreatTeacher
+                {
+                    Email = context.Saga.Email,
+                    Name = context.Saga.Name,
+                    GroupName = context.Saga.GroupName
+                }))
                 .TransitionTo(Failed)
                 .Finalize());
 

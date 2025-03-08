@@ -29,4 +29,9 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Saga\" />
+  </ItemGroup>
+
 </Project>

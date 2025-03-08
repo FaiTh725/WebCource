@@ -3,7 +3,6 @@ using MassTransit;
 using MediatR;
 using Test.Application.Commands.Student.CreateStudent;
 using Test.Contracts.Student.Requests;
-using Test.Contracts.Student.Responses;
 
 namespace Test.Application.Consumers.Student
 {

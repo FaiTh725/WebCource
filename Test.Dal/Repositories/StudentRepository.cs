@@ -36,5 +36,14 @@ namespace Test.Dal.Repositories
 
             return student;
         }
+
+        public async Task<Student?> GetStudentWithGroup(string email)
+        {
+            var student = await context.Students
+                .Include(x => x.Group)
+                .FirstOrDefaultAsync(x => x.Email == email);
+
+            return student;
+        }
     }
 }

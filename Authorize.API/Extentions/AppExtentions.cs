@@ -2,7 +2,6 @@
 using Authorize.API.Helpers.Conf;
 using Authorize.Application;
 using Authorize.Application.Consumers.User;
-using Authorize.Application.Saga.RegisterUser;
 using MassTransit;
 
 namespace Authorize.API.Extentions
@@ -29,12 +28,6 @@ namespace Authorize.API.Extentions
                 conf.SetKebabCaseEndpointNameFormatter();
 
                 conf.AddConsumer<ChangeUserRoleConsumer>();
-
-                //conf.AddSagaStateMachine<RegisterUserSaga, RegisterUserState>()
-                //.InMemoryRepository();
-
-                //conf.AddConsumer<CreateUserConsumer>();
-                //conf.AddConsumer<CreateStudentConsumer>();
 
                 conf.UsingRabbitMq((context, configurator) =>
                 {
