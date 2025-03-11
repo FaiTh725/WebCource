@@ -10,7 +10,7 @@ namespace Test.Dal.Configurations
         {
             builder.HasKey(x => x.Id);
 
-            builder.HasOne(x => x.Test)
+            builder.HasOne(x => x.Question)
                 .WithMany(x => x.Variants);
 
             builder.Property(x => x.Text)

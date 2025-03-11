@@ -11,9 +11,7 @@ namespace Test.Domain.Entities
 
         public Teacher Owner { get; init; }
 
-        public List<TestVariant> Variants { get; private set; }
-    
-        public TestType TestType { get; private set; }
+        public List<TestQuestion> Questions { get; init; } = new List<TestQuestion>();
 
         // For EF
         public Test() {}
@@ -21,23 +19,17 @@ namespace Test.Domain.Entities
         private Test(
             string name,
             Subject subject,
-            Teacher owner,
-            List<TestVariant> variants,
-            TestType testType = TestType.OneAnswer)
+            Teacher owner)
         {
             Name = name;
             Subject = subject;
             Owner = owner;
-            Variants = variants;
-            TestType = testType;
         }
 
         public static Result<Test> Initialize(
             string name,
             Subject subject,
-            Teacher owner,
-            List<TestVariant> variants,
-            TestType testType = TestType.OneAnswer)
+            Teacher owner)
         {
             if(string.IsNullOrWhiteSpace(name))
             {
@@ -53,9 +45,7 @@ namespace Test.Domain.Entities
             return Result.Success(new Test(
                 name,
                 subject,
-                owner,
-                variants,
-                testType));
+                owner));
         }
 
     }

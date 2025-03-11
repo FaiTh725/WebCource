@@ -16,7 +16,7 @@ namespace Test.Dal.Configurations
             builder.HasOne(x => x.Subject)
                 .WithMany(x => x.Tests);
 
-            builder.HasMany(x => x.Variants)
+            builder.HasMany(x => x.Questions)
                 .WithOne(x => x.Test)
                 .OnDelete(DeleteBehavior.Cascade);
 

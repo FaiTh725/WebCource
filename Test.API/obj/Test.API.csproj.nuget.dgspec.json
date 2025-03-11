@@ -428,7 +428,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Test.Application.csproj": {
+                "projectPath": "C:\\VSProjects\\WebCource\\backend\\Test.Application\\Test.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -446,6 +450,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.23.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

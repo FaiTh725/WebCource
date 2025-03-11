@@ -5,6 +5,10 @@
         public IStudentRepository StudentRepository { get; }
         public ITeacherRepository TeacherRepository { get; }
         public IGroupRepository GroupRepository { get; }
+        public ISubjectRepository SubjectRepository { get; }
+        public ITestRepository TestRepository { get; }
+        public IQuestionRepository QuestionRepository { get; }
+        public IQuestionVariantRepository QuestionVariantRepository { get; }
 
 
         int SaveChanges();

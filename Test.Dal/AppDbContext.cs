@@ -31,7 +31,9 @@ namespace Test.Dal
 
         public DbSet<TestEntity> Tests { get; set; }
 
-        public DbSet<TestVariant> Questions { get; set; }
+        public DbSet<TestQuestion> Questions { get; set; }
+
+        public DbSet<TestVariant> QuestionAnswers { get; set; }
 
         public DbSet<TestAttempt> Attempts { get; set; }
 
@@ -45,6 +47,7 @@ namespace Test.Dal
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
             modelBuilder.ApplyConfiguration(new SubjectConfiguration());
             modelBuilder.ApplyConfiguration(new TestConfiguration());
+            modelBuilder.ApplyConfiguration(new TestQuestionConfiguration());
             modelBuilder.ApplyConfiguration(new TestVariantConfiguration());
             modelBuilder.ApplyConfiguration(new TestAttemptConfiguration());
             modelBuilder.ApplyConfiguration(new TestAnswerConfiguration());

@@ -181,7 +181,6 @@ C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\tr\Microsoft.CodeAnaly
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\VSProjects\WebCource\backend\Test.API\obj\Debug\net8.0\Test.API.sourcelink.json
-C:\VSProjects\WebCource\backend\Test.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\MediatR.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\MassTransit.dll
@@ -195,3 +194,8 @@ C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Notification.Contracts
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Notification.Contracts.pdb
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Authorize.Contracts.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Authorize.Contracts.pdb
+C:\VSProjects\WebCource\backend\Test.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Azure.Storage.Common.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\System.IO.Hashing.dll

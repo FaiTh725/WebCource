@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "Test.API.Controllers.FileUploadController",
+    "Method": "DeleteFile",
+    "RelativePath": "api/FileUpload/DeleteFile",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.FileUploadController",
+    "Method": "GetFile",
+    "RelativePath": "api/FileUpload/GetFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "path",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.FileUploadController",
+    "Method": "UploadFile",
+    "RelativePath": "api/FileUpload/UploadFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Test.API.Controllers.GroupController",
     "Method": "AddGroup",
     "RelativePath": "api/Group/AddGroup",
@@ -16,6 +58,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Test.API.Controllers.QuestionAnswerController",
+    "Method": "AddQuestionAnswer",
+    "RelativePath": "api/QuestionAnswer/AddQuestionAnswer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestQuestionId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VariantImg",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsCorrect",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.QuestionAnswerController",
+    "Method": "DeleteListQuestions",
+    "RelativePath": "api/QuestionAnswer/DeleteListQuestions",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Variant.DeleteListVariants.DeleteListVariantsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.QuestionAnswerController",
+    "Method": "DeleteQuestion",
+    "RelativePath": "api/QuestionAnswer/DeleteQuestion",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Variant.DeleteQuestionVariant.DeleteQuestionVariantCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.SubjectController",
+    "Method": "AddSubject",
+    "RelativePath": "api/Subject/AddSubject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Subject.CreateSubject.CreateSubjectCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Test.API.Controllers.TeacherController",
     "Method": "AddTeacher",
     "RelativePath": "api/Teacher/AddTeacher",
@@ -26,6 +147,74 @@
       {
         "Name": "request",
         "Type": "Test.Application.Commands.Teacher.CreateTeacher.CreateTeacherCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "CreateTest",
+    "RelativePath": "api/Test/CreateTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.API.Contacts.Test.CreateTestRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestQuestionController",
+    "Method": "AddQuestion",
+    "RelativePath": "api/TestQuestion/AddQuestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Question",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuestionImg",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Variants",
+        "Type": "System.Collections.Generic.List\u00601[[Test.API.Contacts.QuestionVariant.CreateVariantQuestion, Test.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestQuestionController",
+    "Method": "DeleteTestQuestion",
+    "RelativePath": "api/TestQuestion/DeleteTestQuestion",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Question.DeleteQuestion.DeleteQuestionCommand",
         "IsRequired": true
       }
     ],

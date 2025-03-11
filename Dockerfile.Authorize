@@ -1,0 +1,23 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
+
+WORKDIR /src
+COPY ["Authorize.API/Authorize.API.csproj", "Authorize.API/"]
+
+RUN dotnet restore 'Authorize.API/Authorize.API.csproj'
+
+COPY . .
+
+WORKDIR /src/Authorize.API
+RUN dotnet build "Authorize.API.csproj" -c Release -o /app/build
+
+FROM build as publish
+RUN dotnet publish -c Release -o /app/publish
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 
+ENV ASPNETCORE_HTTP_PORTS=5101
+ENV ASPNETCORE_HTTPS_PORTS=5102
+EXPOSE 5101
+EXPOSE 5102
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT [ "dotnet", "Authorize.API.dll" ]

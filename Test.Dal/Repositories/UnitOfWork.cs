@@ -11,16 +11,31 @@ namespace Test.Dal.Repositories
         private readonly StudentRepository studentRepository;
         private readonly TeacherRepository teacherRepository;
         private readonly GroupRepository groupRepository;
+        private readonly SubjectRepository subjectRepository;
+        private readonly TestRepository testRepository;
+        private readonly QuestionRepository questionRepository;
+        private readonly QuestionVariantRepository questionVariantRepository;
 
         public UnitOfWork(
-            AppDbContext context
+            AppDbContext context,
+            IStudentRepository studentRepository,
+            ITeacherRepository teacherRepository,
+            IGroupRepository groupRepository,
+            ISubjectRepository subjectRepository,
+            ITestRepository testRepository,
+            IQuestionRepository questionRepository,
+            IQuestionVariantRepository questionVariantRepository
             )
         {
             this.context = context;
 
-            studentRepository = new StudentRepository(context);
-            teacherRepository = new TeacherRepository(context);
-            groupRepository = new GroupRepository(context);
+            this.studentRepository = (StudentRepository)studentRepository;
+            this.teacherRepository = (TeacherRepository)teacherRepository;
+            this.groupRepository = (GroupRepository)groupRepository;
+            this.subjectRepository = (SubjectRepository)subjectRepository;
+            this.testRepository = (TestRepository)testRepository;
+            this.questionRepository = (QuestionRepository)questionRepository;
+            this.questionVariantRepository = (QuestionVariantRepository)questionVariantRepository;
         }
 
         public IStudentRepository StudentRepository => studentRepository;
@@ -28,6 +43,14 @@ namespace Test.Dal.Repositories
         public ITeacherRepository TeacherRepository => teacherRepository;
 
         public IGroupRepository GroupRepository => groupRepository;
+
+        public ISubjectRepository SubjectRepository => subjectRepository;
+
+        public ITestRepository TestRepository => testRepository;
+
+        public IQuestionRepository QuestionRepository => questionRepository;
+
+        public IQuestionVariantRepository QuestionVariantRepository => questionVariantRepository;
 
         public void BeginTransaction()
         {

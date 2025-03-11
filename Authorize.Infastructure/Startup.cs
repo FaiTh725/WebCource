@@ -11,6 +11,7 @@ namespace Authorize.Infastructure
     {
         public static void ConfigureInfastructureServices(this IServiceCollection services)
         {
+            services.AddHostedService<ApplyMigrationsBackgroundService>();
             services.AddHostedService<InitializeRoles>();
 
             services.AddSingleton<IJwtService<GenerateUserToken, TokenResponse>, JwtUserService>();
