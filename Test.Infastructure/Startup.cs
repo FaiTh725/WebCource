@@ -2,8 +2,11 @@
 using Azure.Storage.Blobs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Redis.OM;
 using Test.Application.Contracts.Teacher;
+using Test.Application.Contracts.TestAttempt;
 using Test.Application.Interfaces;
+using Test.Infastructure.BackgroundServices;
 using Test.Infastructure.Implementations;
 
 namespace Test.Infastructure
@@ -15,12 +18,16 @@ namespace Test.Infastructure
             IConfiguration configuration)
         {
             services.AddAzurite(configuration);
+            services.AddRedisProvider(configuration);
 
+            services.AddScoped<IRedisEntityService<AttemptRedisEntity>, TestAttemptRedisService>();
             services.AddSingleton<ITokenService<TeacherToken>, TokenService>();
             services.AddSingleton<IBlobService, BlobService>();
+
+            services.AddHostedService<CreateRedisOmIndexes>();
         }
 
-        public static void AddAzurite(
+        private static void AddAzurite(
             this IServiceCollection services, 
             IConfiguration configuration)
         {
@@ -29,6 +36,17 @@ namespace Test.Infastructure
                 throw new AppConfigurationException("Azurite connection string");
 
             services.AddSingleton(new BlobServiceClient(blobConnectionString));
+        }
+
+        private static void AddRedisProvider(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var connectionString = configuration
+                .GetConnectionString("RedisConnection") ??
+                throw new AppConfigurationException("Redis connection string");
+
+            services.AddSingleton(new RedisConnectionProvider(connectionString));
         }
     }
 }

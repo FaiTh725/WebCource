@@ -169,6 +169,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "GetAllTest",
+    "RelativePath": "api/Test/GetAllTest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "StartTest",
+    "RelativePath": "api/Test/StartTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.API.Contacts.Test.StartTestRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Test.API.Controllers.TestQuestionController",
     "Method": "AddQuestion",
     "RelativePath": "api/TestQuestion/AddQuestion",

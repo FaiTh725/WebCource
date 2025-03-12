@@ -85,10 +85,25 @@ services:
     networks:
       - rabbitmq_net
   
+  web-redis-db:
+    image: redis/redis-stack:latest
+    container_name: web-redis-db
+    environment:
+      # - REDIS_USER=faith725
+      - REDIS_PASSWORD=goblinusik111W
+      - REDIS_ARGS=--requirepass goblinusik111W
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    networks:
+      - redis_net
+
 networks:
   rabbitmq_net:
     driver: bridge
   sql_server_net:
+    driver: bridge
+  redis_net:
     driver: bridge
 
 volumes:

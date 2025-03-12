@@ -152,11 +152,6 @@ namespace Test.Dal.Migrations
                     b.Property<long>("AnswerId")
                         .HasColumnType("bigint");
 
-                    b.Property<bool>("IsCorrect")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
                     b.Property<long>("TestAttemptId")
                         .HasColumnType("bigint");
 

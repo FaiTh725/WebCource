@@ -1,4 +1,5 @@
-﻿using Test.Domain.Enums;
+﻿using Test.Application.Contracts.QuestionVariant;
+using Test.Domain.Enums;
 
 namespace Test.Application.Contracts.Question
 {
@@ -11,5 +12,8 @@ namespace Test.Application.Contracts.Question
         public List<string> UrlImages { get; set; } = new List<string>();
 
         public QuestionType Type { get; set; }
+
+        public List<QuestionVariantResponse> QuestionVariants { get; set; } = 
+            new List<QuestionVariantResponse>();
     }
 }

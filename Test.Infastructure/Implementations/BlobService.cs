@@ -29,13 +29,33 @@ namespace Test.Infastructure.Implementations
         public async Task DeleteBlobFolder(string folderPath, CancellationToken cancellationToken = default)
         {
             await foreach(var blobItem in 
-                blobContainerClient.GetBlobsAsync(prefix: folderPath))
+                blobContainerClient.GetBlobsAsync(
+                    prefix: folderPath, 
+                    cancellationToken: cancellationToken))
             {
                 var blobClient = blobContainerClient
                     .GetBlobClient(blobItem.Name);
 
-                await blobClient.DeleteIfExistsAsync();
+                await blobClient.DeleteIfExistsAsync(cancellationToken: cancellationToken);
             }
+        }
+
+        public async Task<List<string>> GetBlobFolder(string path, CancellationToken cancellationToken = default)
+        {
+            var urls = new List<string>();
+
+            await foreach (var blobItem in
+                blobContainerClient.GetBlobsAsync(
+                    prefix: path, 
+                    cancellationToken: cancellationToken))
+            {
+                var blobClient = blobContainerClient
+                    .GetBlobClient(blobItem.Name);
+
+                urls.Add(blobClient.Uri.AbsoluteUri);
+            }
+
+            return urls;    
         }
 
         public async Task<string> GetBlobUrl(string path, CancellationToken cancellationToken = default)

@@ -12,9 +12,6 @@ namespace Test.Dal.Configurations
 
             builder.HasOne(x => x.TestAttempt)
                 .WithMany(x => x.Answers);
-
-            builder.Property(x => x.IsCorrect)
-                .HasDefaultValue(false);
         }
     }
 }

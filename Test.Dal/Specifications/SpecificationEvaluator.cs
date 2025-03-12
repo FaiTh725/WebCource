@@ -22,6 +22,12 @@ namespace Test.Dal.Specifications
                 (current, includeExpression) =>
                 current.Include(includeExpression));
 
+            queryable = specification.IncludeExpressionsStrings.Aggregate(
+                queryable, 
+                (current, includeExpression) => 
+                current.Include(includeExpression));
+
+
             if(specification.OrderByExpression is not null)
             {
                 queryable = queryable

@@ -8,25 +8,20 @@ namespace Test.Domain.Entities
 
         public TestVariant Answer { get; init; }
 
-        public bool IsCorrect { get; init; }
-
         // For EF
         public TestAnswer(){}
 
         private TestAnswer(
             TestAttempt testAttempt,
-            TestVariant answer,
-            bool isCorrect)
+            TestVariant answer)
         {
             TestAttempt = testAttempt;
             Answer = answer;
-            IsCorrect = isCorrect;
         }
 
         public static Result<TestAnswer> Initialize(
             TestAttempt testAttempt,
-            TestVariant answer,
-            bool isCorrect)
+            TestVariant answer)
         {
             if(testAttempt is null ||
                 answer is null)
@@ -36,8 +31,7 @@ namespace Test.Domain.Entities
 
             return Result.Success(new TestAnswer(
                 testAttempt,
-                answer,
-                isCorrect));
+                answer));
         }
     }
 }
