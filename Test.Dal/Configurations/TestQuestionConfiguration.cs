@@ -19,6 +19,9 @@ namespace Test.Dal.Configurations
 
             builder.Property(x => x.Question)
                 .IsRequired();
+
+            builder.Property(x => x.QuestionWeight)
+                .HasDefaultValue(1);
         }
     }
 }

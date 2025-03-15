@@ -26,20 +26,21 @@ namespace Test.Dal.Repositories
 
         public async Task<TestEntity?> GetTest(long id)
         {
-            return await context.Tests
+            return await context.Tests.AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public IQueryable<TestEntity> GetTests(Specification<TestEntity> specification)
         {
             return SpecificationEvaluator.GetQuery(
-                context.Tests,
+                context.Tests.AsNoTracking(),
                 specification);
         }
 
         public async Task<TestEntity?> GetTestWithOwner(long id)
         {
             return await context.Tests
+                .AsNoTracking()
                 .Include(x => x.Owner)
                 .FirstOrDefaultAsync(x => x.Id == id);
         }

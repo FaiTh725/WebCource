@@ -2,16 +2,12 @@
 
 namespace Test.Application.Contracts.TestAnswer
 {
-    [Document(StorageType = StorageType.Json, Prefixes = new[] { "Answer" })]
     public class AnswerRedisEntity
     {
-        [RedisIdField]
-        public Guid AnswerId { get; set; }
+        public List<long> TestAnswersId { get; set; } = new List<long>();
 
-        [Indexed]
-        public Guid TestAttemptId { get; set; }
+        public long QuestionId { get; set; }
 
-        [Indexed]
-        public long TestAnswerId { get; set; }
+        public DateTime SendTime { get; set; }
     }
 }

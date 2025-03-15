@@ -149,7 +149,10 @@ namespace Test.Dal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long>("AnswerId")
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("QuestionId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("TestAttemptId")
@@ -157,7 +160,7 @@ namespace Test.Dal.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AnswerId");
+                    b.HasIndex("QuestionId");
 
                     b.HasIndex("TestAttemptId");
 
@@ -210,6 +213,11 @@ namespace Test.Dal.Migrations
                     b.Property<int>("QuestionType")
                         .HasColumnType("int");
 
+                    b.Property<int>("QuestionWeight")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
+
                     b.Property<long>("TestId")
                         .HasColumnType("bigint");
 
@@ -245,6 +253,21 @@ namespace Test.Dal.Migrations
                     b.ToTable("QuestionAnswers");
                 });
 
+            modelBuilder.Entity("TestAnswerTestVariant", b =>
+                {
+                    b.Property<long>("AnswersId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("TestAnswerId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("AnswersId", "TestAnswerId");
+
+                    b.HasIndex("TestAnswerId");
+
+                    b.ToTable("TestAnswerTestVariant");
+                });
+
             modelBuilder.Entity("Test.Domain.Entities.Student", b =>
                 {
                     b.HasOne("Test.Domain.Entities.StudentGroup", "Group")
@@ -277,10 +300,10 @@ namespace Test.Dal.Migrations
 
             modelBuilder.Entity("Test.Domain.Entities.TestAnswer", b =>
                 {
-                    b.HasOne("Test.Domain.Entities.TestVariant", "Answer")
+                    b.HasOne("Test.Domain.Entities.TestQuestion", "Question")
                         .WithMany()
-                        .HasForeignKey("AnswerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Test.Domain.Entities.TestAttempt", "TestAttempt")
@@ -289,7 +312,7 @@ namespace Test.Dal.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Answer");
+                    b.Navigation("Question");
 
                     b.Navigation("TestAttempt");
                 });
@@ -333,6 +356,21 @@ namespace Test.Dal.Migrations
                         .IsRequired();
 
                     b.Navigation("Question");
+                });
+
+            modelBuilder.Entity("TestAnswerTestVariant", b =>
+                {
+                    b.HasOne("Test.Domain.Entities.TestVariant", null)
+                        .WithMany()
+                        .HasForeignKey("AnswersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Test.Domain.Entities.TestAnswer", null)
+                        .WithMany()
+                        .HasForeignKey("TestAnswerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Test.Domain.Entities.StudentGroup", b =>

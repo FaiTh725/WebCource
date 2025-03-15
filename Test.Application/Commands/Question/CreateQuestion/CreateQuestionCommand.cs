@@ -14,6 +14,8 @@ namespace Test.Application.Commands.Question.CreateQuestion
 
         public QuestionType Type { get; set; }
 
+        public int QuestionWeight { get; set; }
+
         public List<VariantRequest> Variants { get; set; } = new List<VariantRequest>();
 
         public List<FileEntity> QuestionImages { get; set; } = new List<FileEntity>();

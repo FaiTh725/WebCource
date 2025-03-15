@@ -11,7 +11,7 @@ namespace Test.Domain.Entities
 
         public List<TestAnswer> Answers { get; init; }
 
-        public double Percent { get; init; }
+        public double Percent { get; set; }
 
         public DateTime AnswerDate { get; }
 
@@ -28,6 +28,8 @@ namespace Test.Domain.Entities
             Test = test;
             Percent = percent;
             Answers = answers;
+
+            AnswerDate = DateTime.UtcNow;
         }
 
         public static Result<TestAttempt> Initialize(
@@ -48,8 +50,7 @@ namespace Test.Domain.Entities
                 return Result.Failure<TestAttempt>("Percent is out of 0 and 100");
             }
 
-            if(answers is null ||
-                answers.Count == 0)
+            if(answers is null)
             {
                 return Result.Failure<TestAttempt>("Attemp has no answers");
             }

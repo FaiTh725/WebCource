@@ -13,6 +13,8 @@ namespace Test.Domain.Entities
 
         public List<TestVariant> Variants { get; init; } = new List<TestVariant>();
 
+        public int QuestionWeight { get; set; }
+
         public QuestionType QuestionType { get; private set; }
 
         // For EF
@@ -21,11 +23,13 @@ namespace Test.Domain.Entities
         private TestQuestion(
             Test test,
             string question,
-            QuestionType type = QuestionType.OneAnswer)
+            QuestionType type = QuestionType.OneAnswer,
+            int questionWeight = 1)
         {
             Test = test;
             Question = question;
             QuestionType = type;
+            QuestionWeight = questionWeight;
         }
 
         public Result TestQuestionForValid()
@@ -46,7 +50,8 @@ namespace Test.Domain.Entities
         public static Result<TestQuestion> Initialize(
             Test test,
             string question,
-            QuestionType type = QuestionType.OneAnswer)
+            QuestionType type = QuestionType.OneAnswer,
+            int questionWeight = 1)
         {
             if (test is null)
             {
@@ -58,10 +63,16 @@ namespace Test.Domain.Entities
                 return Result.Failure<TestQuestion>("Question text cant be empty");
             }
 
+            if(questionWeight < 1)
+            {
+                return Result.Failure<TestQuestion>("Question weight cant be less than 1");
+            }
+
             return Result.Success(new TestQuestion(
                 test,
                 question,
-                type));
+                type,
+                questionWeight));
         }
     }
 }

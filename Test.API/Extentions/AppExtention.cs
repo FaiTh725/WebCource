@@ -14,6 +14,7 @@ namespace Test.API.Extentions
     public static class AppExtention
     {
         
+        // to Infastructure
         public static void AddJwtAuth(
             this IServiceCollection services, 
             IConfiguration configuration)

@@ -1,4 +1,5 @@
 ﻿using Test.Domain.Entities;
+using Test.Domain.Primitives;
 
 namespace Test.Domain.Repositories
 {
@@ -11,5 +12,7 @@ namespace Test.Domain.Repositories
         Task DeleteQuestionVariant(long id);
 
         Task DeleteQuestionVariants(List<long> ids);
+
+        IEnumerable<TestVariant> GetQuestionVariants(Specification<TestVariant> specification);
     }
 }

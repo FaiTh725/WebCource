@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Test.Dal.Specifications;
 using Test.Domain.Entities;
+using Test.Domain.Primitives;
 using Test.Domain.Repositories;
 
 namespace Test.Dal.Repositories
@@ -41,10 +43,26 @@ namespace Test.Dal.Repositories
                 .ExecuteDeleteAsync();
         }
 
+        //public IEnumerable<TestVariant> GetCorrectAnswers(long testId)
+        //{
+        //    return context.Tests
+        //        .Where(x => x.Id == testId)
+        //        .SelectMany(x => x.Questions)
+        //        .SelectMany(x => x.Variants)
+        //        .Where(x => x.IsCorrect);
+        //}
+
         public async Task<TestVariant?> GetQuestionVariant(long id)
         {
             return await context.QuestionAnswers
                 .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public IEnumerable<TestVariant> GetQuestionVariants(Specification<TestVariant> specification)
+        {
+            return SpecificationEvaluator.GetQuery(
+                context.QuestionAnswers.AsNoTracking(),
+                specification);
         }
     }
 }

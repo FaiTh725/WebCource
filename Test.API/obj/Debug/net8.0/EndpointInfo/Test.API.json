@@ -222,6 +222,37 @@
         }
       }
     },
+    "/api/QuestionAnswer/SendTestAnswer": {
+      "post": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddQuestionAnswerCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddQuestionAnswerCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddQuestionAnswerCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Subject/AddSubject": {
       "post": {
         "tags": [
@@ -346,6 +377,37 @@
         }
       }
     },
+    "/api/Test/StopTest": {
+      "post": {
+        "tags": [
+          "Test"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StopTestCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StopTestCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StopTestCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Test/GetAllTest": {
       "get": {
         "tags": [
@@ -354,6 +416,28 @@
         "parameters": [
           {
             "name": "TestId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Test/GetTestResult": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "parameters": [
+          {
+            "name": "attemptId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -471,6 +555,28 @@
   },
   "components": {
     "schemas": {
+      "AddQuestionAnswerCommand": {
+        "type": "object",
+        "properties": {
+          "testSessionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "testVariantsId": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "nullable": true
+          },
+          "questionId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateGroupCommand": {
         "type": "object",
         "properties": {
@@ -592,6 +698,16 @@
           "testTime": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StopTestCommand": {
+        "type": "object",
+        "properties": {
+          "attemptId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false

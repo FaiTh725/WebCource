@@ -11,6 +11,6 @@ namespace Test.Domain.Repositories
 
         Task<TestEntity?> GetTestWithOwner(long id);
 
-        IQueryable<TestEntity> GetTests(Specification<TestEntity> specification); 
+        IQueryable<TestEntity> GetTests(Specification<TestEntity> specification);
     }
 }

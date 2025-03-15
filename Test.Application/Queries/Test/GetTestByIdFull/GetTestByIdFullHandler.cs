@@ -7,6 +7,7 @@ using Test.Application.Interfaces;
 using Test.Application.Queries.Test.Specifications;
 using Test.Domain.Entities;
 using Test.Domain.Repositories;
+using TestVariantEntity = Test.Domain.Entities.TestVariant;
 
 namespace Test.Application.Queries.Test.GetTestByIdFull
 {
@@ -61,7 +62,7 @@ namespace Test.Application.Queries.Test.GetTestByIdFull
         }
 
         private async Task<QuestionVariantResponse> GetQuestionVariantResponse(
-            TestVariant variant)
+            TestVariantEntity variant)
         {
             return new QuestionVariantResponse
             {

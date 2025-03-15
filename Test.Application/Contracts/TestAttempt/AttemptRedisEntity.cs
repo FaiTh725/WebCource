@@ -8,10 +8,11 @@ namespace Test.Application.Contracts.TestAttempt
     public class AttemptRedisEntity
     {
         [RedisIdField]
+        [Indexed]
         public Guid AttemptId { get; set; }
 
         [Indexed]
-        public long AnswerStudnetId { get; set; }
+        public long AnswerStudentId { get; set; }
 
         [Indexed]
         public long TestId { get; set; }

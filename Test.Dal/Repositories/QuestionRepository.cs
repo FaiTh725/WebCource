@@ -32,14 +32,17 @@ namespace Test.Dal.Repositories
         public async Task<TestQuestion?> GetQuestion(long id)
         {
             return await context.Questions
+                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<TestQuestion?> GetQuestionWithVariants(long id)
         {
             return await context.Questions
+                .AsNoTracking()
+                .Where(x => x.Id == id)
                 .Include(x => x.Variants)
-                .FirstOrDefaultAsync(x => x.Id == id);
+                .FirstOrDefaultAsync();
         }
     }
 }

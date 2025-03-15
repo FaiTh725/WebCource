@@ -13,6 +13,7 @@ namespace Test.Dal
     {
         private readonly IConfiguration configuration;
         private readonly IMediator mediator;
+
         public AppDbContext(
             DbContextOptions<AppDbContext> options,
             IConfiguration configuration,

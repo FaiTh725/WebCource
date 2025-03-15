@@ -18,7 +18,6 @@ namespace Test.Infastructure.BackgroundServices
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             await provider.Connection.CreateIndexAsync(typeof(AttemptRedisEntity));
-            await provider.Connection.CreateIndexAsync(typeof(AnswerRedisEntity));
         }
     }
 }

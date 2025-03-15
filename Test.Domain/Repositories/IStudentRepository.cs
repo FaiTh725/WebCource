@@ -8,6 +8,8 @@ namespace Test.Domain.Repositories
     {
         Task<Student?> GetStudent(string email);
 
+        Task<Student?> GetStudent(long id);
+
         Task<Student?> GetStudentWithGroup(string email);
 
         Task<Student> AddStudent(Student student);

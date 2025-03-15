@@ -121,6 +121,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Test.API.Controllers.QuestionAnswerController",
+    "Method": "SendTestAnswer",
+    "RelativePath": "api/QuestionAnswer/SendTestAnswer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.QuestionAnswer.AddQuestionAnswerCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Test.API.Controllers.SubjectController",
     "Method": "AddSubject",
     "RelativePath": "api/Subject/AddSubject",
@@ -186,6 +202,22 @@
   },
   {
     "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "GetTestResult",
+    "RelativePath": "api/Test/GetTestResult",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
     "Method": "StartTest",
     "RelativePath": "api/Test/StartTest",
     "HttpMethod": "POST",
@@ -195,6 +227,22 @@
       {
         "Name": "request",
         "Type": "Test.API.Contacts.Test.StartTestRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "StopTest",
+    "RelativePath": "api/Test/StopTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.Test.StopTest.StopTestCommand",
         "IsRequired": true
       }
     ],

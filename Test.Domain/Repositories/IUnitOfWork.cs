@@ -9,7 +9,7 @@
         public ITestRepository TestRepository { get; }
         public IQuestionRepository QuestionRepository { get; }
         public IQuestionVariantRepository QuestionVariantRepository { get; }
-
+        public ITestAttemptRepository TestAttemptRepository { get; }
 
         int SaveChanges();
         Task<int> SaveChangesAsync();

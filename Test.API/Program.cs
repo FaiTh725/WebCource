@@ -1,5 +1,6 @@
 using Test.API.Extentions;
 using Test.API.Middlewares;
+using Test.Application;
 using Test.Dal;
 using Test.Infastructure;
 
@@ -20,6 +21,7 @@ builder.Services.ConfigureMediatr();
 
 builder.Services.AddDalRepositories();
 builder.Services.ConfigureInfastructureServices(builder.Configuration);
+builder.Services.ConfigureAppServices();
 
 builder.Services.AddProblemDetails();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();

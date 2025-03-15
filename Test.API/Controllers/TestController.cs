@@ -5,10 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 using Test.API.Contacts.Test;
 using Test.Application.Commands.Test.CreateTest;
 using Test.Application.Commands.Test.StartTest;
+using Test.Application.Commands.Test.StopTest;
 using Test.Application.Contracts.Teacher;
 using Test.Application.Interfaces;
 using Test.Application.Queries.Test.GetTestByIdFull;
 using Test.Application.Queries.Test.GetTestByIdOwner;
+using Test.Application.Queries.TestAttempt.GetTestAttemptByIdWithAnswers;
 
 namespace Test.API.Controllers
 {
@@ -56,8 +58,6 @@ namespace Test.API.Controllers
             return Ok(test);
         }
 
-        // May should throw out attemp id with test to start student test
-        // he get attempt id to send answert to api and all required test questions
         [HttpPost("[action]")]
         [Authorize]
         public async Task<IActionResult> StartTest(StartTestRequest request)
@@ -91,14 +91,38 @@ namespace Test.API.Controllers
             });
         }
 
-        [HttpGet("[action]")]
+        [HttpPost("[action]")]
         [Authorize]
+        public async Task<IActionResult> StopTest(
+            StopTestCommand request)
+        {
+            var testResultId = await mediator.Send(request);
+
+            return Ok(testResultId);
+        }
+
+        [HttpGet("[action]")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetAllTest(
             [FromQuery] GetTestByIdFullQuery query)
         {
             var test = await mediator.Send(query);
 
             return Ok(test);
+        }
+
+        // TODO Only Teacher, Admin and Owner Attempt Can get the TestResult
+        [HttpGet("[action]")]
+        [Authorize]
+        public async Task<IActionResult> GetTestResult(
+            [FromQuery] long attemptId)
+        {
+            var result = await mediator.Send(new GetTestAttemptByIdWithAnswersQuery
+            {
+                Id = attemptId
+            });
+
+            return Ok(result);
         }
     }
 }

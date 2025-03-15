@@ -48,7 +48,7 @@ namespace Test.Application.Commands.Test.StartTest
             var testAttempts = new AttemptRedisEntity
             {
                 AttemptId = Guid.NewGuid(),
-                AnswerStudnetId = student.Id,
+                AnswerStudentId = student.Id,
                 TestId = test.Id,
                 TestTime = request.TestTime,
                 StartDate = DateTime.UtcNow

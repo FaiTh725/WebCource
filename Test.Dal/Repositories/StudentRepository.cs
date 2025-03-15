@@ -32,16 +32,26 @@ namespace Test.Dal.Repositories
         public async Task<Student?> GetStudent(string email)
         {
             var student = await context.Students
+                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Email == email);
 
             return student;
         }
 
+        public async Task<Student?> GetStudent(long id)
+        {
+            return await context.Students
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public async Task<Student?> GetStudentWithGroup(string email)
         {
             var student = await context.Students
+                .Where(x => x.Email == email)
+                .AsNoTracking()
                 .Include(x => x.Group)
-                .FirstOrDefaultAsync(x => x.Email == email);
+                .FirstOrDefaultAsync();
 
             return student;
         }

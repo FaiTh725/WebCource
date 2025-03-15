@@ -33,7 +33,8 @@ namespace Test.Application.Commands.Question.CreateQuestion
             var questionEntity = TestQuestion.Initialize(
                 test,
                 request.Question,
-                request.Type);
+                request.Type,
+                request.QuestionWeight);
 
             if(questionEntity.IsFailure)
             {

@@ -26,8 +26,9 @@ namespace Test.Infastructure.Implementations
 
         public async Task<AttemptRedisEntity?> GetEntity(Guid id)
         {
-            var attempt = await attempts
-                .FirstOrDefaultAsync(x => x.AttemptId == id);
+            var attemptsList = await attempts.ToListAsync();
+            var attempt = attemptsList
+                .FirstOrDefault(x => x.AttemptId == id);
 
             return attempt;
         }
@@ -35,7 +36,7 @@ namespace Test.Infastructure.Implementations
         public async Task<AttemptRedisEntity?> GetEntity(long tEntityMember)
         {
             var attempt = await attempts
-                .FirstOrDefaultAsync(x => x.AnswerStudnetId == tEntityMember);
+                .FirstOrDefaultAsync(x => x.AnswerStudentId == tEntityMember);
 
             return attempt;
         }
@@ -43,6 +44,23 @@ namespace Test.Infastructure.Implementations
         public async Task RemoveEntity(Guid id)
         {
             await provider.Connection.UnlinkAsync($"Attempt:{id}");
+        }
+
+        public async Task UpdateEntity(AttemptRedisEntity entity)
+        {
+            var attempt = await GetEntity(entity.AttemptId);
+
+            if (attempt is null)
+            {
+                return;
+            }
+
+            attempt.TestTime = entity.TestTime;
+
+            attempt.Answers.Clear();
+            attempt.Answers.AddRange(entity.Answers);
+
+            await attempts.SaveAsync();
         }
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Test.API.Contacts.QuestionVariant;
+using Test.Application.Commands.QuestionAnswer;
 using Test.Application.Commands.Variant.CreateVariant;
 using Test.Application.Commands.Variant.DeleteListVariants;
 using Test.Application.Commands.Variant.DeleteQuestionVariant;
@@ -59,6 +60,16 @@ namespace Test.API.Controllers
         [Authorize(Roles = "Admin, Teacher")]
         public async Task<IActionResult> DeleteListQuestions(
             DeleteListVariantsCommand request)
+        {
+            await mediator.Send(request);
+
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        [Authorize]
+        public async Task<IActionResult> SendTestAnswer(
+            AddQuestionAnswerCommand request)
         {
             await mediator.Send(request);
 

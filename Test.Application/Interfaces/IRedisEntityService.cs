@@ -8,6 +8,8 @@
 
         Task<TEntity?> GetEntity(long tEntityMember);
 
+        Task UpdateEntity(TEntity entity);
+
         Task RemoveEntity(Guid id);
     }
 }

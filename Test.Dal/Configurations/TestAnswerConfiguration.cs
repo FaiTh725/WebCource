@@ -11,7 +11,19 @@ namespace Test.Dal.Configurations
             builder.HasKey(x => x.Id);
 
             builder.HasOne(x => x.TestAttempt)
-                .WithMany(x => x.Answers);
+                .WithMany(x => x.Answers)
+                .IsRequired();
+
+            builder.HasMany(x => x.Answers)
+                .WithMany();
+
+            builder.HasOne(x => x.Question)
+                .WithMany()
+                .HasForeignKey(x => x.QuestionId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.Property(x => x.IsCorrect)
+                .IsRequired();
         }
     }
 }

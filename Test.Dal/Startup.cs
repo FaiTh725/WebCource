@@ -19,6 +19,7 @@ namespace Test.Dal
             services.AddScoped<ITestRepository, TestRepository>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
             services.AddScoped<IQuestionVariantRepository, QuestionVariantRepository>();
+            services.AddScoped<ITestAttemptRepository, TestAttemptRepository>();
         }
     }
 }
