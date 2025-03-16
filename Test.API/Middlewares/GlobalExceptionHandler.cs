@@ -36,6 +36,7 @@ namespace Test.API.Middlewares
             httpContext.Response.StatusCode = exception switch
             {
                 NotFoundApiException => StatusCodes.Status404NotFound,
+                ForbiddenAccessApiException => StatusCodes.Status403Forbidden,
                 BadRequestApiException => StatusCodes.Status400BadRequest,
                 ConflictApiException => StatusCodes.Status409Conflict,
                 InternalServerApiException => StatusCodes.Status500InternalServerError,

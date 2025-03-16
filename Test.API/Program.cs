@@ -1,3 +1,4 @@
+using Hangfire;
 using Test.API.Extentions;
 using Test.API.Middlewares;
 using Test.Application;
@@ -17,7 +18,6 @@ builder.Services.AddDbContext<AppDbContext>();
 
 builder.Services.AddJwtAuth(builder.Configuration);
 builder.Services.AddRabbitMq(builder.Configuration);
-builder.Services.ConfigureMediatr();
 
 builder.Services.AddDalRepositories();
 builder.Services.ConfigureInfastructureServices(builder.Configuration);
@@ -37,6 +37,8 @@ app.UseExceptionHandler(opt => { });
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseHangfireDashboard();
 
 app.MapControllers();
 

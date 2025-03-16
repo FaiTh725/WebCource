@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Test.Application.Commands.Question.DeleteQuestion;
+using Test.Application.Common.Mediator;
 using Test.Application.Interfaces;
 
 namespace Test.API.Controllers
@@ -8,11 +11,14 @@ namespace Test.API.Controllers
     public class FileUploadController : ControllerBase
     {
         private readonly IBlobService blobService;
+        private readonly IMediator mediator;
 
         public FileUploadController(
-            IBlobService blobService)
+            IBlobService blobService,
+            IMediator mediator)
         {
             this.blobService = blobService;
+            this.mediator = mediator;
         }
 
         [HttpPost("[action]")]

@@ -1,7 +1,9 @@
 ﻿using Application.Shared.Exceptions;
 using Azure.Storage.Blobs;
+using Hangfire;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Redis.OM;
 using Test.Application.Contracts.Teacher;
 using Test.Application.Contracts.TestAttempt;
@@ -19,8 +21,10 @@ namespace Test.Infastructure
         {
             services.AddAzurite(configuration);
             services.AddRedisProvider(configuration);
+            services.AddHangfireProvider(configuration);
 
             services.AddScoped<IRedisEntityService<AttemptRedisEntity>, TestAttemptRedisService>();
+            services.AddScoped<IBackgroundJobService, BackgroundJobService>();
             services.AddSingleton<ITokenService<TeacherToken>, TokenService>();
             services.AddSingleton<IBlobService, BlobService>();
 
@@ -47,6 +51,31 @@ namespace Test.Infastructure
                 throw new AppConfigurationException("Redis connection string");
 
             services.AddSingleton(new RedisConnectionProvider(connectionString));
+        }
+
+        private static void AddHangfireProvider(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var sqlServerConnectionString = configuration
+                .GetConnectionString("SQLServerConnection") ??
+                throw new AppConfigurationException("SQlServer connection string");
+
+            var jsonSettings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All,
+            };
+
+            services.AddHangfire(x =>
+            {
+                x.UseSimpleAssemblyNameTypeSerializer()
+                .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
+                //.UseRecommendedSerializerSettings()
+                .UseSqlServerStorage(sqlServerConnectionString)
+                .UseSerializerSettings(jsonSettings);
+            });
+
+            services.AddHangfireServer();
         }
     }
 }

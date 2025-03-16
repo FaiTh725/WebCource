@@ -32,7 +32,6 @@ namespace Test.Dal.Repositories
         public async Task<Teacher?> GetTeacher(string email)
         {
             var teacher = await context.Teachers
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Email == email);
 
             return teacher;
@@ -41,7 +40,6 @@ namespace Test.Dal.Repositories
         public async Task<Teacher?> GetTeacher(long id)
         {
             var teacher = await context.Teachers
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             return teacher;

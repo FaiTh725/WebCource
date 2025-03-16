@@ -61,7 +61,7 @@ namespace Test.Dal.Repositories
         public IEnumerable<TestVariant> GetQuestionVariants(Specification<TestVariant> specification)
         {
             return SpecificationEvaluator.GetQuery(
-                context.QuestionAnswers.AsNoTracking(),
+                context.QuestionAnswers,
                 specification);
         }
     }

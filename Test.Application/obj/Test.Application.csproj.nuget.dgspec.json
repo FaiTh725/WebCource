@@ -57,6 +57,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[8.3.6, )"

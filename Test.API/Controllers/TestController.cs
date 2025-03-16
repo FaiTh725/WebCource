@@ -117,9 +117,21 @@ namespace Test.API.Controllers
         public async Task<IActionResult> GetTestResult(
             [FromQuery] long attemptId)
         {
+            var token = Request.Cookies["token"] ??
+                throw new InternalServerApiException("Cookie doesnt has token");
+
+            var decodeToken = tokenService.DecodeToken(token);
+
+            if (decodeToken.IsFailure)
+            {
+                throw new InternalServerApiException("Invalid authorize token");
+            }
+
             var result = await mediator.Send(new GetTestAttemptByIdWithAnswersQuery
             {
-                Id = attemptId
+                Email = decodeToken.Value.Email,
+                Role = decodeToken.Value.Role,
+                AttemptId = attemptId
             });
 
             return Ok(result);

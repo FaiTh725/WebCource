@@ -91,11 +91,5 @@ namespace Test.API.Extentions
                 });
             });
         }
-
-        public static void ConfigureMediatr(
-            this IServiceCollection services)
-        {
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly));
-        }
     }
 }

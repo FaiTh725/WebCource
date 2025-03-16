@@ -25,7 +25,6 @@ namespace Test.Dal.Repositories
         public async Task<StudentGroup?> GetGroup(int groupName)
         {
             var group = await context.Groups
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.GroupName == groupName);
 
             return group;
@@ -34,7 +33,6 @@ namespace Test.Dal.Repositories
         public async Task<StudentGroup?> GetGroup(long id)
         {
             var group = await context.Groups
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             return group;

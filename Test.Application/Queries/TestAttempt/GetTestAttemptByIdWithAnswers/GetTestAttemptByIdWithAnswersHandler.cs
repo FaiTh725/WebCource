@@ -27,7 +27,7 @@ namespace Test.Application.Queries.TestAttempt.GetTestAttemptByIdWithAnswers
         public async Task<TestAttemptWithAnswersResponse> Handle(GetTestAttemptByIdWithAnswersQuery request, CancellationToken cancellationToken)
         {
             var attempt = unitOfWork.TestAttemptRepository
-                .GetTestAttempts(new AttemptByIdWithAnswersAndQuestion(request.Id))
+                .GetTestAttempts(new AttemptByIdWithAnswersAndQuestion(request.AttemptId))
                 .FirstOrDefault();
 
             if(attempt is null)
@@ -39,7 +39,7 @@ namespace Test.Application.Queries.TestAttempt.GetTestAttemptByIdWithAnswers
 
             foreach(var answer in attempt.Answers)
             {
-                // Change
+                
                 var questionVariantsTasks = answer.Answers.Select(async x => new QuestionVariantResponse
                 {
                     Text = x.Text,

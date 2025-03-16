@@ -20,6 +20,9 @@ namespace Test.Application.Contracts.TestAttempt
         [Indexed]
         public DateTime StartDate { get; set; }
 
+        [Indexed]
+        public string JobId { get; set; } = string.Empty;
+
         [Indexed(CascadeDepth = 1)]
         public List<AnswerRedisEntity> Answers { get; set; } = new List<AnswerRedisEntity>();
         

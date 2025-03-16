@@ -1,5 +1,7 @@
 ﻿using Application.Shared.Exceptions;
 using MediatR;
+using Test.Application.Commands.Test.StopTest;
+using Test.Application.Common.Mediator;
 using Test.Application.Contracts.TestAttempt;
 using Test.Application.Interfaces;
 using Test.Domain.Repositories;
@@ -10,13 +12,16 @@ namespace Test.Application.Commands.Test.StartTest
     {
         private readonly IUnitOfWork unitOfWork;
         private IRedisEntityService<AttemptRedisEntity> attemptRedisService;
+        private readonly IBackgroundJobService backgroundJobService;
 
         public StartTestHandler(
             IRedisEntityService<AttemptRedisEntity> attemptRedisService,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IBackgroundJobService backgroundJobService)
         {
             this.attemptRedisService = attemptRedisService;
             this.unitOfWork = unitOfWork;
+            this.backgroundJobService = backgroundJobService;
         }
 
         public async Task<Guid> Handle(StartTestCommand request, CancellationToken cancellationToken)
@@ -45,16 +50,27 @@ namespace Test.Application.Commands.Test.StartTest
                 throw new ConflictApiException("Test has already started");
             }
 
+            var testAttemptId = Guid.NewGuid();
+
+            var cancelTestJobId = backgroundJobService.CreateDelaydedJob<MediatorWrapper>(x =>
+            x.SendCommand(new StopTestCommand
+            {
+                AttemptId = testAttemptId
+            }),
+            TimeSpan.FromSeconds(request.TestTime));
+
             var testAttempts = new AttemptRedisEntity
             {
-                AttemptId = Guid.NewGuid(),
+                AttemptId = testAttemptId,
                 AnswerStudentId = student.Id,
                 TestId = test.Id,
                 TestTime = request.TestTime,
+                JobId = cancelTestJobId,
                 StartDate = DateTime.UtcNow
             };
 
             await attemptRedisService.AddEntity(testAttempts);
+
 
             return testAttempts.AttemptId;
         }

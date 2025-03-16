@@ -13,15 +13,18 @@ namespace Test.Application.Commands.Test.StopTest
         private readonly IUnitOfWork unitOfWork;
         private readonly ITestEvaluationService testEvaluationService;
         private readonly IRedisEntityService<AttemptRedisEntity> attemptRegisService;
+        private readonly IBackgroundJobService backgroundJobService;
 
         public StopTestHandler(
             IUnitOfWork unitOfWork,
             ITestEvaluationService testEvaluationService,
-            IRedisEntityService<AttemptRedisEntity> attemptRegisService)
+            IRedisEntityService<AttemptRedisEntity> attemptRegisService,
+            IBackgroundJobService backgroundJobService)
         {
             this.unitOfWork = unitOfWork;
             this.testEvaluationService = testEvaluationService;
             this.attemptRegisService = attemptRegisService;
+            this.backgroundJobService = backgroundJobService;
         }
 
         public async Task<long> Handle(StopTestCommand request, CancellationToken cancellationToken)
@@ -34,7 +37,7 @@ namespace Test.Application.Commands.Test.StopTest
                 throw new BadRequestApiException("Attempt doesnt exist");
             }
 
-            // как то долго
+            // Why so long
             var student = await unitOfWork.StudentRepository
                 .GetStudent(attempt.AnswerStudentId);
 
@@ -75,12 +78,12 @@ namespace Test.Application.Commands.Test.StopTest
             testAttempt.Value.Answers.AddRange(testResult.Value.StudentAnswers);
 
             var testAttemptAdded = await unitOfWork.TestAttemptRepository
-                .AddTestTestAttempt(testAttempt.Value);
+                .AddTestAttempt(testAttempt.Value);
 
             await unitOfWork.SaveChangesAsync();
 
-            // Delete attempt
-            //await attemptRegisService.RemoveEntity(attempt.AttemptId);
+            await attemptRegisService.RemoveEntity(attempt.AttemptId);
+            backgroundJobService.CancelJob(attempt.JobId);
 
             return testAttemptAdded.Id;
         }

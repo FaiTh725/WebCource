@@ -7,7 +7,6 @@ namespace Test.Domain.Entities
         public TestAttempt TestAttempt { get; init; }
 
         public List<TestVariant> Answers { get; init; }
-        //public List<long> AnswersId { get; init; }
 
         public TestQuestion Question { get; init; }
         public long QuestionId { get; init; }
@@ -30,36 +29,6 @@ namespace Test.Domain.Entities
             Question = question;
             IsCorrect = isCorrect;
         }
-
-        //private TestAnswer(
-        //    TestAttempt testAttempt,
-        //    List<long> answersId,
-        //    long questionId,
-        //    bool isCorrect)
-        //{
-        //    TestAttempt = testAttempt;
-        //    AnswersId = answersId;
-        //    QuestionId = questionId;
-        //    IsCorrect = isCorrect;
-        //}
-
-        //public static Result<TestAnswer> Initialize(
-        //    TestAttempt testAttempt,
-        //    List<long> answersId,
-        //    long questionId,
-        //    bool isCorrect)
-        //{
-        //    if (testAttempt is null)
-        //    {
-        //        return Result.Failure<TestAnswer>("Attemptis null");
-        //    }
-
-        //    return Result.Success(new TestAnswer(
-        //        testAttempt,
-        //        answersId,
-        //        questionId,
-        //        isCorrect));
-        //}
 
         public static Result<TestAnswer> Initialize(
             TestAttempt testAttempt,

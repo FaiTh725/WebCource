@@ -16,7 +16,7 @@ namespace Test.Dal.Repositories
             this.context = context;
         }
 
-        public async Task<TestAttempt> AddTestTestAttempt(TestAttempt testAttempt)
+        public async Task<TestAttempt> AddTestAttempt(TestAttempt testAttempt)
         {
             var testAttemptEntity = await context.Attempts
                 .AddAsync(testAttempt);
@@ -29,9 +29,15 @@ namespace Test.Dal.Repositories
 
             return SpecificationEvaluator.GetQuery(
                 context.Attempts
-                    .AsNoTracking()
                     .AsSplitQuery(),
                 specification);
+        }
+
+        public async Task<TestAttempt?> GetTestAttemptWithOwner(long id)
+        {
+            return await context.Attempts
+                .Include(x => x.AnswerStudent)
+                .FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }

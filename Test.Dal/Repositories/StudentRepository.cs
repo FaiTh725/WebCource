@@ -32,7 +32,6 @@ namespace Test.Dal.Repositories
         public async Task<Student?> GetStudent(string email)
         {
             var student = await context.Students
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Email == email);
 
             return student;
@@ -41,7 +40,6 @@ namespace Test.Dal.Repositories
         public async Task<Student?> GetStudent(long id)
         {
             return await context.Students
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
 
@@ -49,7 +47,6 @@ namespace Test.Dal.Repositories
         {
             var student = await context.Students
                 .Where(x => x.Email == email)
-                .AsNoTracking()
                 .Include(x => x.Group)
                 .FirstOrDefaultAsync();
 

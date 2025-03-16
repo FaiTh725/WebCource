@@ -13,7 +13,7 @@ namespace Test.Domain.Entities
 
         public double Percent { get; set; }
 
-        public DateTime AnswerDate { get; }
+        public DateTime AnswerDate { get; init; }
 
         // For EF
         public TestAttempt() { }

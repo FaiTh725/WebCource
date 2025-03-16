@@ -25,14 +25,12 @@ namespace Test.Dal.Repositories
         public async Task<Subject?> GetSubject(long id)
         {
             return await context.Subjects
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Subject?> GetSubject(string name)
         {
             return await context.Subjects
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Name == name);
         }
     }

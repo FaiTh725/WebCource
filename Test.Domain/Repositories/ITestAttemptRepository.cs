@@ -5,8 +5,10 @@ namespace Test.Domain.Repositories
 {
     public interface ITestAttemptRepository
     {
-        Task<TestAttempt> AddTestTestAttempt(TestAttempt testAttempt);
+        Task<TestAttempt> AddTestAttempt(TestAttempt testAttempt);
 
         IQueryable<TestAttempt> GetTestAttempts(Specification<TestAttempt> specification);
+
+        Task<TestAttempt?> GetTestAttemptWithOwner(long id);
     }
 }
