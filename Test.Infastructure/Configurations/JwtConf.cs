@@ -1,4 +1,4 @@
-﻿namespace Test.API.Helpers.Conf
+﻿namespace Test.Infastructure.Configurations
 {
     public class JwtConf
     {

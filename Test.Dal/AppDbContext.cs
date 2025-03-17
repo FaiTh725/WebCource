@@ -42,6 +42,8 @@ namespace Test.Dal
 
         public DbSet<StudentGroup> Groups { get; set; }
 
+        public DbSet<TestAccess> TestAccesses { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new TeacherConfiguration());
@@ -53,6 +55,7 @@ namespace Test.Dal
             modelBuilder.ApplyConfiguration(new TestAttemptConfiguration());
             modelBuilder.ApplyConfiguration(new TestAnswerConfiguration());
             modelBuilder.ApplyConfiguration(new StudentGroupConfiguration());
+            modelBuilder.ApplyConfiguration(new TestAccessConfiguration());
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

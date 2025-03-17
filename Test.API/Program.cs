@@ -1,5 +1,4 @@
 using Hangfire;
-using Test.API.Extentions;
 using Test.API.Middlewares;
 using Test.Application;
 using Test.Dal;
@@ -16,8 +15,6 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>();
 
-builder.Services.AddJwtAuth(builder.Configuration);
-builder.Services.AddRabbitMq(builder.Configuration);
 
 builder.Services.AddDalRepositories();
 builder.Services.ConfigureInfastructureServices(builder.Configuration);

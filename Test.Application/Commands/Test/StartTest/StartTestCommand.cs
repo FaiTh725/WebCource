@@ -1,8 +1,9 @@
 ﻿using MediatR;
+using Test.Application.Common.Interfaces;
 
 namespace Test.Application.Commands.Test.StartTest
 {
-    public class StartTestCommand : IRequest<Guid>
+    public class StartTestCommand : IRequest<Guid>, ITestAccessRequest
     {
         public string StudentEmail { get; set; } = string.Empty;
         

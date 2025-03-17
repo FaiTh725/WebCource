@@ -20,6 +20,7 @@ namespace Test.Dal
             services.AddScoped<IQuestionRepository, QuestionRepository>();
             services.AddScoped<IQuestionVariantRepository, QuestionVariantRepository>();
             services.AddScoped<ITestAttemptRepository, TestAttemptRepository>();
+            services.AddScoped<ITestAccessRepository, TestAccessRepository>();
         }
     }
 }

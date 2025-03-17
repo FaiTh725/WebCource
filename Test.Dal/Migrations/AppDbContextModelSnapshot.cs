@@ -142,6 +142,21 @@ namespace Test.Dal.Migrations
                     b.ToTable("Tests");
                 });
 
+            modelBuilder.Entity("Test.Domain.Entities.TestAccess", b =>
+                {
+                    b.Property<long>("TestId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("StudentId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("TestId", "StudentId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("TestAccesses");
+                });
+
             modelBuilder.Entity("Test.Domain.Entities.TestAnswer", b =>
                 {
                     b.Property<long>("Id")
@@ -302,6 +317,25 @@ namespace Test.Dal.Migrations
                     b.Navigation("Subject");
                 });
 
+            modelBuilder.Entity("Test.Domain.Entities.TestAccess", b =>
+                {
+                    b.HasOne("Test.Domain.Entities.Student", "Student")
+                        .WithMany("TestAccesses")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Test.Domain.Entities.Test", "Test")
+                        .WithMany("TestAccesses")
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+
+                    b.Navigation("Test");
+                });
+
             modelBuilder.Entity("Test.Domain.Entities.TestAnswer", b =>
                 {
                     b.HasOne("Test.Domain.Entities.TestQuestion", "Question")
@@ -377,6 +411,11 @@ namespace Test.Dal.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Test.Domain.Entities.Student", b =>
+                {
+                    b.Navigation("TestAccesses");
+                });
+
             modelBuilder.Entity("Test.Domain.Entities.StudentGroup", b =>
                 {
                     b.Navigation("Students");
@@ -395,6 +434,8 @@ namespace Test.Dal.Migrations
             modelBuilder.Entity("Test.Domain.Entities.Test", b =>
                 {
                     b.Navigation("Questions");
+
+                    b.Navigation("TestAccesses");
                 });
 
             modelBuilder.Entity("Test.Domain.Entities.TestAttempt", b =>

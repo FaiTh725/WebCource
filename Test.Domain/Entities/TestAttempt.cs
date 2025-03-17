@@ -1,9 +1,11 @@
 ﻿
 using CSharpFunctionalExtensions;
+using Test.Domain.Event;
+using Test.Domain.Primitives;
 
 namespace Test.Domain.Entities
 {
-    public class TestAttempt : Entity
+    public class TestAttempt : DomainEventEntity
     {
         public Student AnswerStudent { get; init; }
 
@@ -30,6 +32,12 @@ namespace Test.Domain.Entities
             Answers = answers;
 
             AnswerDate = DateTime.UtcNow;
+
+            RaiseDomainEvent(new TestCompletedEvent
+            {
+                StudentId = AnswerStudent.Id,
+                TestId = Test.Id
+            });
         }
 
         public static Result<TestAttempt> Initialize(

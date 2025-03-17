@@ -13,6 +13,8 @@ namespace Test.Domain.Entities
 
         public List<TestQuestion> Questions { get; init; } = new List<TestQuestion>();
 
+        public List<TestAccess> TestAccesses { get; private set; } = new List<TestAccess>();    
+
         // For EF
         public Test() {}
 

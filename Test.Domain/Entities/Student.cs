@@ -6,6 +6,8 @@ namespace Test.Domain.Entities
     {
         public StudentGroup Group { get; private set; }
 
+        public List<TestAccess> TestAccesses { get; private set; } = new List<TestAccess>();    
+
         public Student() : base("", ""){}
 
         private Student(

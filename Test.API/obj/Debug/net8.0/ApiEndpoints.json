@@ -170,6 +170,22 @@
   },
   {
     "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "CloseTest",
+    "RelativePath": "api/Test/CloseTest",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.TestAccess.CloseAccess.CloseTestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
     "Method": "CreateTest",
     "RelativePath": "api/Test/CreateTest",
     "HttpMethod": "POST",
@@ -212,6 +228,22 @@
         "Name": "attemptId",
         "Type": "System.Int64",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.API.Controllers.TestController",
+    "Method": "OpenTest",
+    "RelativePath": "api/Test/OpenTest",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Test.Application.Commands.TestAccess.OpenTest.OpenTestCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

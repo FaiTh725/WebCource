@@ -2215,6 +2215,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Azure.Storage.Blobs": "12.23.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.11",
+          "Microsoft.IdentityModel.Tokens": "8.6.1",
           "System.IdentityModel.Tokens.Jwt": "8.6.1",
           "Test.Application": "1.0.0"
         },
@@ -6153,7 +6155,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.11",
       "Swashbuckle.AspNetCore >= 6.6.2",
       "Test.Application >= 1.0.0",
       "Test.Dal >= 1.0.0",
@@ -6224,10 +6225,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": {
-            "target": "Package",
-            "version": "[8.0.11, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"

@@ -1,4 +1,5 @@
 ﻿using Application.Shared.Exceptions;
+using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,11 +7,14 @@ using Test.API.Contacts.Test;
 using Test.Application.Commands.Test.CreateTest;
 using Test.Application.Commands.Test.StartTest;
 using Test.Application.Commands.Test.StopTest;
+using Test.Application.Commands.TestAccess.CloseAccess;
+using Test.Application.Commands.TestAccess.OpenTest;
 using Test.Application.Contracts.Teacher;
 using Test.Application.Interfaces;
 using Test.Application.Queries.Test.GetTestByIdFull;
 using Test.Application.Queries.Test.GetTestByIdOwner;
 using Test.Application.Queries.TestAttempt.GetTestAttemptByIdWithAnswers;
+using Test.Domain.Event;
 
 namespace Test.API.Controllers
 {
@@ -20,13 +24,16 @@ namespace Test.API.Controllers
     {
         private readonly IMediator mediator;
         private readonly ITokenService<TeacherToken> tokenService;
+        private readonly IBus bus;
 
         public TestController(
             IMediator mediator,
-            ITokenService<TeacherToken> tokenService)
+            ITokenService<TeacherToken> tokenService,
+            IBus bus)
         {
             this.mediator = mediator;
             this.tokenService = tokenService;
+            this.bus = bus;
         }
 
         [HttpPost("[action]")]
@@ -111,7 +118,6 @@ namespace Test.API.Controllers
             return Ok(test);
         }
 
-        // TODO Only Teacher, Admin and Owner Attempt Can get the TestResult
         [HttpGet("[action]")]
         [Authorize]
         public async Task<IActionResult> GetTestResult(
@@ -135,6 +141,26 @@ namespace Test.API.Controllers
             });
 
             return Ok(result);
+        }
+
+        [HttpPatch("[action]")]
+        [Authorize(Roles = "Admin, Teacher")]
+        public async Task<IActionResult> OpenTest(
+            OpenTestCommand request)
+        {
+            await mediator.Send(request);
+
+            return Ok();
+        }
+
+        [HttpPatch("[action]")]
+        [Authorize(Roles = "Admin, Teacher")]
+        public async Task<IActionResult> CloseTest(
+            CloseTestCommand request)
+        {
+            await mediator.Send(request);
+
+            return Ok();
         }
     }
 }

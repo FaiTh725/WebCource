@@ -20,6 +20,10 @@ namespace Test.Dal.Configurations
                 .WithOne(x => x.Test)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            builder.HasMany(x => x.TestAccesses)
+                .WithOne(x => x.Test)
+                .OnDelete(DeleteBehavior.Cascade);
+
             builder.Property(x => x.Name)
                 .IsRequired();
         }

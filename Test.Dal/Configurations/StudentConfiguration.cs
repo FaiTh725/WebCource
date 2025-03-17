@@ -13,6 +13,10 @@ namespace Test.Dal.Configurations
             builder.HasIndex(x => x.Email)
                 .IsUnique();
 
+            builder.HasMany(x => x.TestAccesses)
+                .WithOne(x => x.Student)
+                .OnDelete(DeleteBehavior.Cascade);
+
             builder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(Profile.MAX_NAME_LENGTH);

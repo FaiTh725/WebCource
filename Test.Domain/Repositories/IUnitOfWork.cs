@@ -10,6 +10,7 @@
         public IQuestionRepository QuestionRepository { get; }
         public IQuestionVariantRepository QuestionVariantRepository { get; }
         public ITestAttemptRepository TestAttemptRepository { get; }
+        public ITestAccessRepository TestAccessRepository { get; }
 
         int SaveChanges();
         Task<int> SaveChangesAsync();

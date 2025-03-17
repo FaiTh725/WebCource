@@ -16,6 +16,7 @@ namespace Test.Dal.Repositories
         private readonly QuestionRepository questionRepository;
         private readonly QuestionVariantRepository questionVariantRepository;
         private readonly TestAttemptRepository testAttemptRepository;
+        private readonly TestAccessRepository testAccessRepository;
 
         public UnitOfWork(
             AppDbContext context,
@@ -26,7 +27,8 @@ namespace Test.Dal.Repositories
             ITestRepository testRepository,
             IQuestionRepository questionRepository,
             IQuestionVariantRepository questionVariantRepository,
-            ITestAttemptRepository testAttemptRepository
+            ITestAttemptRepository testAttemptRepository,
+            ITestAccessRepository testAccessRepository
             )
         {
             this.context = context;
@@ -39,6 +41,7 @@ namespace Test.Dal.Repositories
             this.questionRepository = (QuestionRepository)questionRepository;
             this.questionVariantRepository = (QuestionVariantRepository)questionVariantRepository;
             this.testAttemptRepository = (TestAttemptRepository)testAttemptRepository;
+            this.testAccessRepository = (TestAccessRepository)testAccessRepository;
         }
 
         public IStudentRepository StudentRepository => studentRepository;
@@ -56,6 +59,8 @@ namespace Test.Dal.Repositories
         public IQuestionVariantRepository QuestionVariantRepository => questionVariantRepository;
 
         public ITestAttemptRepository TestAttemptRepository => testAttemptRepository;
+
+        public ITestAccessRepository TestAccessRepository => testAccessRepository;
 
         public void BeginTransaction()
         {
