@@ -82,8 +82,7 @@ namespace Test.API.Controllers
             var attemptId = await mediator.Send(new StartTestCommand
             {
                 StudentEmail = decodeToken.Value.Email,
-                TestId = request.TestId,
-                TestTime = request.TestTime
+                TestId = request.TestId
             });
 
             var test = await mediator.Send(new GetTestByIdFullQuery

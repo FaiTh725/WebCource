@@ -34,12 +34,12 @@ namespace Test.Application.Commands.Test.StartTest
                 throw new InternalServerApiException("Request from unknown account");
             }
 
-            var test = await unitOfWork.TestRepository
-                .GetTest(request.TestId);
+            var testAccess = await unitOfWork.TestAccessRepository
+                .GetTestAccess(request.TestId, student.Id);
 
-            if(test is null)
+            if (testAccess is null)
             {
-                throw new NotFoundApiException("Test doesnt exist");
+                throw new ForbiddenAccessApiException("Test is close");
             }
 
             var attemptStarted = await attemptRedisService
@@ -53,18 +53,18 @@ namespace Test.Application.Commands.Test.StartTest
             var testAttemptId = Guid.NewGuid();
 
             var cancelTestJobId = backgroundJobService.CreateDelaydedJob<MediatorWrapper>(x =>
-            x.SendCommand(new StopTestCommand
-            {
-                AttemptId = testAttemptId
-            }),
-            TimeSpan.FromSeconds(request.TestTime));
+                x.SendCommand(new StopTestCommand
+                {
+                    AttemptId = testAttemptId
+                }),
+                TimeSpan.FromSeconds(testAccess.TestDuration));
 
             var testAttempts = new AttemptRedisEntity
             {
                 AttemptId = testAttemptId,
-                AnswerStudentId = student.Id,
-                TestId = test.Id,
-                TestTime = request.TestTime,
+                AnswerStudentId = testAccess.StudentId,
+                TestId = testAccess.TestId,
+                TestTime = testAccess.TestDuration,
                 JobId = cancelTestJobId,
                 StartDate = DateTime.UtcNow
             };

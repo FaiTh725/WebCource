@@ -20,6 +20,19 @@ namespace Test.Dal.Configurations
                 .WithMany(x => x.TestAccesses)
                 .HasForeignKey(x => x.StudentId)
                 .IsRequired();
+
+            builder.Property(x => x.TestDuration)
+                .IsRequired();
+
+            builder.ToTable(x =>
+                x.HasCheckConstraint(
+                    "CK_TestAccesses_TestDuration",
+                    "TestDuration > 0"));
+
+            //builder.ToTable(x =>
+            //x.HasCheckConstraint(
+            //    "CK_Attempts_Percent",
+            //    "[Percent] >= 0 AND [Percent] <= 100"));
         }
     }
 }

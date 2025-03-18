@@ -763,6 +763,10 @@
       "OpenTestCommand": {
         "type": "object",
         "properties": {
+          "testDuration": {
+            "type": "integer",
+            "format": "int32"
+          },
           "testId": {
             "type": "integer",
             "format": "int64"
@@ -792,10 +796,6 @@
           "testId": {
             "type": "integer",
             "format": "int64"
-          },
-          "testTime": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
