@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Redis.OM;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 using System.Text;
 using Test.Application.Consumers.Student;
 using Test.Application.Consumers.Teacher;
@@ -40,6 +42,7 @@ namespace Test.Infastructure
             services.AddSingleton<IBlobService, BlobService>();
 
             services.AddHostedService<CreateRedisOmIndexes>();
+            services.AddHostedService<ApplyMigrationsBackgroundService>();
         }
 
         private static IServiceCollection AddAzurite(
@@ -155,15 +158,58 @@ namespace Test.Infastructure
 
                     jwtOptions.Events = new JwtBearerEvents
                     {
-                        OnMessageReceived = ctx =>
+                        OnMessageReceived = async ctx =>
                         {
                             var token = ctx.Request.Cookies["token"];
+                            var refreshToken = ctx.Request.Cookies["refresh_token"];
+
+                            var tokenHandler = new JwtSecurityTokenHandler();
+                            var jwt = await tokenHandler.ValidateTokenAsync(
+                                token ?? "",
+                                jwtOptions.TokenValidationParameters);
+
+
+                            if (!jwt.IsValid)
+                            {
+                                var requestUrl = @"https://localhost:5102";
+                                var cookieContainer = new CookieContainer();
+                                cookieContainer.Add(new Uri(requestUrl), new Cookie("refresh_token", refreshToken ?? ""));
+
+                                var handler = new HttpClientHandler
+                                {
+                                    UseCookies = true,
+                                    CookieContainer = cookieContainer
+                                };
+
+                                var client = new HttpClient(handler);
+                                var response = await client.GetAsync(requestUrl + "/api/RefreshToken/Refresh");
+
+                                if(!response.IsSuccessStatusCode)
+                                {
+                                    return;
+                                }
+
+                                var newCookies = response.Headers.GetValues("Set-Cookie");
+
+                                if (response.Headers.TryGetValues("Set-Cookie", out var setCookies))
+                                {
+                                    foreach (var setCookie in setCookies)
+                                    {
+                                        handler.CookieContainer.SetCookies(new Uri(requestUrl), setCookie);
+                                    }
+                                }
+
+                                token = handler.CookieContainer
+                                    .GetCookies(new Uri(requestUrl))
+                                    .Cast<Cookie>()
+                                    .FirstOrDefault(c => c.Name == "token")?
+                                    .Value;
+                            }
+
                             if (!string.IsNullOrEmpty(token))
                             {
                                 ctx.Token = token;
                             }
-
-                            return Task.CompletedTask;
                         }
                     };
                 });

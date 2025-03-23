@@ -1,6 +1,5 @@
 ﻿using Authorize.Domain.Repositories;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.Data;
 
 namespace Authorize.Dal.Repositories
 {
@@ -11,20 +10,27 @@ namespace Authorize.Dal.Repositories
 
         private RoleRepository roleRepository;
         private UserRepository userRepository;
+        private readonly RefreshTokenRepository refreshTokenRepository;
 
 
         public UnitOfWork(
-            AppDbContext context)
+            AppDbContext context,
+            IUserRepository userRepository,
+            IRoleRepository roleRepository,
+            IRefreshTokenRepository refreshTokenRepository)
         {
             this.context = context;
 
-            roleRepository = new RoleRepository(context);
-            userRepository = new UserRepository(context);
+            this.roleRepository = (RoleRepository)roleRepository;
+            this.userRepository = (UserRepository)userRepository;
+            this.refreshTokenRepository = (RefreshTokenRepository)refreshTokenRepository;
         }
 
         public IRoleRepository RoleRepository => roleRepository;
 
         public IUserRepository UserRepository => userRepository;
+
+        public IRefreshTokenRepository RefreshTokenRepository => refreshTokenRepository;
 
         public void BeginTransaction()
         {

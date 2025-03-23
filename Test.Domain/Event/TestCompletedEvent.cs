@@ -7,5 +7,7 @@ namespace Test.Domain.Event
         public long TestId { get; set; }
 
         public long StudentId { get; set; }
+
+        public double Percent { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using Authorize.API.Middlewares;
 using Authorize.Dal;
 using Authorize.Infastructure;
 using Authorize.Application;
+using Hangfire;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,12 +21,14 @@ builder.Services.AddRabbitMq(builder.Configuration);
 
 builder.Services.ConfigureAppRepositories();
 builder.Services.ConfigureAppServices();
-builder.Services.ConfigureInfastructureServices();
+builder.Services.ConfigureInfastructureServices(builder.Configuration);
 
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseHangfireDashboard();
 
 app.MapControllers();
 

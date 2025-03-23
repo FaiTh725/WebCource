@@ -8,11 +8,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Authorize.Infastructure.Implementations
 {
-    public class JwtUserService : IJwtService<GenerateUserToken, TokenResponse>
+    public class JwtUserService : 
+        IJwtService<GenerateUserToken, TokenResponse>
     {
         private readonly IConfiguration configuration;
 
@@ -45,6 +47,16 @@ namespace Authorize.Infastructure.Implementations
             });
         }
 
+        public string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[32];
+
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+
+            return Convert.ToBase64String(randomNumber);
+        }
+    
         public string GenerateToken(GenerateUserToken tokenObject)
         {
             var jwtConf = configuration

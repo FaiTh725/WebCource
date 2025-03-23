@@ -1,4 +1,5 @@
-﻿using Authorize.Application.Implementations;
+﻿using Authorize.Application.Common.Hangfire;
+using Authorize.Application.Implementations;
 using Authorize.Application.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,6 +10,7 @@ namespace Authorize.Application
         public static void ConfigureAppServices(this IServiceCollection services)
         {
             services.AddSingleton<IHashService, HashService>();
+            services.AddScoped<HangFireWrapper>();
         }
     }
 }

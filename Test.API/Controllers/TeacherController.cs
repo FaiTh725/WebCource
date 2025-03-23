@@ -33,15 +33,6 @@ namespace Test.API.Controllers
             });
 
             return Ok();
-
-            //var teacherId = await mediator.Send(request);
-
-            //var teacher = await mediator.Send(new GetTeacherByIdQuery 
-            //{ 
-            //    Id = teacherId
-            //});
-
-            //return Ok(teacher);
         }
     }
 }

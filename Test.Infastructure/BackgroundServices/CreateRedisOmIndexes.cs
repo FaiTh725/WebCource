@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Redis.OM;
-using Test.Application.Contracts.TestAnswer;
 using Test.Application.Contracts.TestAttempt;
 
 namespace Test.Infastructure.BackgroundServices

@@ -1,5 +1,4 @@
 ﻿using Hangfire;
-using MediatR;
 using System.Linq.Expressions;
 using Test.Application.Interfaces;
 

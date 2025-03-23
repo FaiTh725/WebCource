@@ -36,7 +36,8 @@ namespace Test.Domain.Entities
             RaiseDomainEvent(new TestCompletedEvent
             {
                 StudentId = AnswerStudent.Id,
-                TestId = Test.Id
+                TestId = Test.Id,
+                Percent = Percent
             });
         }
 

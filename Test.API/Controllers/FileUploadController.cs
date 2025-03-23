@@ -1,7 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Test.Application.Commands.Question.DeleteQuestion;
-using Test.Application.Common.Mediator;
 using Test.Application.Interfaces;
 
 namespace Test.API.Controllers

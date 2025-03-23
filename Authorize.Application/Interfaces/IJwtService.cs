@@ -9,5 +9,7 @@ namespace Authorize.Application.Interfaces
         string GenerateToken(TokenObj tokenObject);
 
         Result<TokenResponse> DecodeToken(string token);
+
+        string GenerateRefreshToken();
     }
 }

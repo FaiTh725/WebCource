@@ -63,6 +63,18 @@
           }
         }
       }
+    },
+    "/api/RefreshToken/Refresh": {
+      "get": {
+        "tags": [
+          "RefreshToken"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

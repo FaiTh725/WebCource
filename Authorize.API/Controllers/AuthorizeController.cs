@@ -1,4 +1,5 @@
-﻿using Authorize.Application.Commands.User.Login;
+﻿using Authorize.Application.Commands.AccessToken.CreateRefreshToken;
+using Authorize.Application.Commands.User.Login;
 using Authorize.Application.Commands.User.Register;
 using Authorize.Application.Contacts.Token;
 using Authorize.Application.Contacts.User;
@@ -34,6 +35,11 @@ namespace Authorize.API.Controllers
                 Id = userId
             });
 
+            var refreshToken = await mediator.Send(new CreateRefreshTokenCommand
+            {
+                UserId = userId
+            });
+
             var token = jwtService.GenerateToken(new GenerateUserToken
             {
                 Email = user.Email,
@@ -47,7 +53,8 @@ namespace Authorize.API.Controllers
                 SameSite = SameSiteMode.None
             };
 
-            Response.Cookies.Append("token", token);
+            Response.Cookies.Append("token", token, cookieOptions);
+            Response.Cookies.Append("refresh_token", refreshToken, cookieOptions);
 
             return Ok(user);
         }
@@ -62,6 +69,11 @@ namespace Authorize.API.Controllers
                 Id = userId
             });
 
+            var refreshToken = await mediator.Send(new CreateRefreshTokenCommand
+            {
+                UserId = userId
+            });
+
             var token = jwtService.GenerateToken(new GenerateUserToken
             {
                 Email = user.Email,
@@ -75,7 +87,8 @@ namespace Authorize.API.Controllers
                 SameSite = SameSiteMode.None
             };
 
-            Response.Cookies.Append("token", token);
+            Response.Cookies.Append("token", token, cookieOptions);
+            Response.Cookies.Append("refresh_token", refreshToken, cookieOptions);
 
             return Ok(user);
         }

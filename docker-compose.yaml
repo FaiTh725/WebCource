@@ -3,6 +3,36 @@ version: "3.8"
 name: "WebCource"
 
 services:
+  test_api:
+    image: web_cource_test
+    container_name: test_api-aplication
+    ports:
+      - "5201:5201"
+      - "5202:5202"
+    environment:
+      - RabbitMq__UserPassword=goblinusik111W
+      - RabbitMq__UserLogin=FaITh725
+      - RabbitMq__Host=rabbitmq
+      - JwtSetting__SecretKey=SuperSecretKey8234064.SaltyForKey023.495
+      - JwtSetting__Issuer=Issuer
+      - JwtSetting__Audience=Audience
+      - ConnectionStrings__SQLServerConnection=Server=ms-sql-server, 1433;Database=TestWeb;User=sa;Password=goblinusik111W;MultipleActiveResultSets=true;TrustServerCertificate=True;Integrated Security=False;
+      - ConnectionStrings__RedisConnection=redis://:goblinusik111W@web-redis-db:6379
+      - ConnectionStrings__AzuriteStorage=DefaultEndpointsProtocol=http;BlobEndpoint=http://localhost:10000/faith725;AccountName=faith725;AccountKey=ZGV2c3RvcmVhY2NvdW50Mw==
+      - ASPNETCORE_URLS=https://+:5202;http://+:5201
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=goblinusik111W
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    volumes:
+      - .\Certificates:/https:ros
+    depends_on:
+      - ms-sql-server
+      - web-redis-db
+      - rabbitmq
+    networks:
+      - rabbitmq_net
+      - sql_server_net
+      - redis_net
+
   authorize_api:
     image: web_cource_authorize
     container_name: authorize_api-aplication
@@ -23,6 +53,7 @@ services:
     volumes:
       - .\Certificates:/https:ro
     depends_on:
+      - ms-sql-server
       - rabbitmq
     networks:
       - rabbitmq_net
@@ -89,7 +120,6 @@ services:
     image: redis/redis-stack:latest
     container_name: web-redis-db
     environment:
-      # - REDIS_USER=faith725
       - REDIS_PASSWORD=goblinusik111W
       - REDIS_ARGS=--requirepass goblinusik111W
     ports:

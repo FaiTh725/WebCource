@@ -7,6 +7,8 @@ namespace Authorize.Domain.Repositories
         public IRoleRepository RoleRepository { get; }
         public IUserRepository UserRepository { get; }
 
+        public IRefreshTokenRepository RefreshTokenRepository { get; }
+
         int SaveChanges();
 
         Task<int> SaveChangesAsync();

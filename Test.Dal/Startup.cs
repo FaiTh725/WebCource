@@ -1,7 +1,9 @@
 ﻿
 using Microsoft.Extensions.DependencyInjection;
 using Test.Dal.Repositories;
+using Test.Dal.Services;
 using Test.Domain.Repositories;
+using Test.Domain.Services;
 
 namespace Test.Dal
 {
@@ -21,6 +23,8 @@ namespace Test.Dal
             services.AddScoped<IQuestionVariantRepository, QuestionVariantRepository>();
             services.AddScoped<ITestAttemptRepository, TestAttemptRepository>();
             services.AddScoped<ITestAccessRepository, TestAccessRepository>();
+
+            services.AddScoped<IMigrationService, MigrationsService>();
         }
     }
 }

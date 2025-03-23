@@ -1,6 +1,5 @@
 ﻿using CSharpFunctionalExtensions;
 using Test.Application.Contracts.Test;
-using Test.Application.Contracts.TestAnswer;
 using Test.Application.Contracts.TestAttempt;
 using Test.Domain.Entities;
 

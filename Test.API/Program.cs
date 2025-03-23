@@ -15,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>();
 
+builder.Services.AddHttpClient();
 
 builder.Services.AddDalRepositories();
 builder.Services.ConfigureInfastructureServices(builder.Configuration);
@@ -30,7 +31,6 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.UseExceptionHandler(opt => { });
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -38,5 +38,7 @@ app.UseAuthorization();
 app.UseHangfireDashboard();
 
 app.MapControllers();
+
+app.UseExceptionHandler(opt => { });
 
 app.Run();

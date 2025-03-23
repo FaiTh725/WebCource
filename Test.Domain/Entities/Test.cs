@@ -1,5 +1,4 @@
 ﻿using CSharpFunctionalExtensions;
-using Test.Domain.Enums;
 
 namespace Test.Domain.Entities
 {

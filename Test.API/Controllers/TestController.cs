@@ -1,5 +1,4 @@
 ﻿using Application.Shared.Exceptions;
-using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +13,6 @@ using Test.Application.Interfaces;
 using Test.Application.Queries.Test.GetTestByIdFull;
 using Test.Application.Queries.Test.GetTestByIdOwner;
 using Test.Application.Queries.TestAttempt.GetTestAttemptByIdWithAnswers;
-using Test.Domain.Event;
 
 namespace Test.API.Controllers
 {
@@ -24,16 +22,13 @@ namespace Test.API.Controllers
     {
         private readonly IMediator mediator;
         private readonly ITokenService<TeacherToken> tokenService;
-        private readonly IBus bus;
 
         public TestController(
             IMediator mediator,
-            ITokenService<TeacherToken> tokenService,
-            IBus bus)
+            ITokenService<TeacherToken> tokenService)
         {
             this.mediator = mediator;
             this.tokenService = tokenService;
-            this.bus = bus;
         }
 
         [HttpPost("[action]")]

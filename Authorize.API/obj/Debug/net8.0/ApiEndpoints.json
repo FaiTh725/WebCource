@@ -35,5 +35,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authorize.API.Controllers.RefreshTokenController",
+    "Method": "Refresh",
+    "RelativePath": "api/RefreshToken/Refresh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
