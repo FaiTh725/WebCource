@@ -24,7 +24,7 @@ namespace Authorize.Infastructure.BackgroundServices
             backgroundService.CreateScheduleJob<HangFireWrapper>(x =>
                 x.DeleteExpiredTokenWrapper(),
                 "delete_expired_token",
-                "* */3 * * * *");
+                "0 0 * * * *");
 
             return Task.CompletedTask;
         }

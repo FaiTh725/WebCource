@@ -24,6 +24,7 @@ namespace Test.Application
             {
                 cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly);
                 cfg.AddOpenBehavior(typeof(AttemptOwnerAccessBehaviour<,>));
+                cfg.AddOpenBehavior(typeof(CachingBehavior<,>));
             });
 
             return services;

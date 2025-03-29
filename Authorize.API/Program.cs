@@ -16,8 +16,7 @@ builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddProblemDetails();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
-builder.Services.ConfigureMediats();
-builder.Services.AddRabbitMq(builder.Configuration);
+builder.Services.ConfigureValidators();
 
 builder.Services.ConfigureAppRepositories();
 builder.Services.ConfigureAppServices();

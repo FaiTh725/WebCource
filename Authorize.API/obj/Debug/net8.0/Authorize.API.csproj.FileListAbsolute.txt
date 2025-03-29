@@ -219,3 +219,6 @@ C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\sv\Hangfire.Core.
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
 C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\FluentValidation.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\VSProjects\WebCource\backend\Authorize.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

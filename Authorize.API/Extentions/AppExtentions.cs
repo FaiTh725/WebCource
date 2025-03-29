@@ -1,45 +1,20 @@
-﻿using Application.Shared.Exceptions;
-using Authorize.API.Helpers.Conf;
-using Authorize.Application;
-using Authorize.Application.Consumers.User;
-using MassTransit;
+﻿using Authorize.API.Validators.User;
+using Authorize.Application.Commands.User.Login;
+using Authorize.Application.Commands.User.Register;
+using FluentValidation;
 
 namespace Authorize.API.Extentions
 {
     public static class AppExtentions
     {
-        public static void ConfigureMediats(this IServiceCollection services)
+
+        public static IServiceCollection ConfigureValidators(
+            this IServiceCollection services)
         {
-            services.AddMediatR(cfg =>
-                cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly));
-        }
+            services.AddScoped<IValidator<RegisterUserRequest>, RegisterUserValidator>();
+            services.AddScoped<IValidator<LoginUserRequest>, LoginUserValidator>();
 
-        public static void AddRabbitMq(
-            this IServiceCollection services,
-            IConfiguration configuration)
-        {
-            var rabbitMqConf = configuration
-                .GetSection("RabbitMq")
-                .Get<RabbitMqConf>() ??
-                throw new AppConfigurationException("RabbitMq Configuration Section");
-
-            services.AddMassTransit(conf =>
-            {
-                conf.SetKebabCaseEndpointNameFormatter();
-
-                conf.AddConsumer<ChangeUserRoleConsumer>();
-
-                conf.UsingRabbitMq((context, configurator) =>
-                {
-                    configurator.Host(rabbitMqConf.Host, h =>
-                    {
-                        h.Username(rabbitMqConf.UserLogin);
-                        h.Password(rabbitMqConf.UserPassword);
-                    });
-
-                    configurator.ConfigureEndpoints(context);
-                });
-            });
+            return services;
         }
     }
 }

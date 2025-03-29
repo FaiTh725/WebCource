@@ -1,10 +1,8 @@
 ﻿using MassTransit;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Test.Application.Commands.Teacher.CreateTeacher;
 using Test.Application.Events.Teacher;
-using Test.Application.Queries.Teacher.GetTeacherById;
 
 namespace Test.API.Controllers
 {
@@ -12,14 +10,11 @@ namespace Test.API.Controllers
     [Route("api/[controller]")]
     public class TeacherController : ControllerBase
     {
-        private readonly IMediator mediator;
         private readonly IBus bus;
 
         public TeacherController(
-            IMediator mediator,
             IBus bus)
         {
-            this.mediator = mediator;
             this.bus = bus;
         }
 

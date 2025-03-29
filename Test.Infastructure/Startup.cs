@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Redis.OM;
+using StackExchange.Redis;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Text;
@@ -34,12 +35,14 @@ namespace Test.Infastructure
                 .AddRedisProvider(configuration)
                 .AddHangfireProvider(configuration)
                 .ConfigureMassTransit(configuration)
-                .AddJwtAuth(configuration);
+                .AddJwtAuth(configuration)
+                .ConfigureRedisCaching(configuration);
 
             services.AddScoped<IRedisEntityService<AttemptRedisEntity>, TestAttemptRedisService>();
             services.AddScoped<IBackgroundJobService, BackgroundJobService>();
             services.AddSingleton<ITokenService<TeacherToken>, TokenService>();
             services.AddSingleton<IBlobService, BlobService>();
+            services.AddSingleton<ICachService, CachService>();
 
             services.AddHostedService<CreateRedisOmIndexes>();
             services.AddHostedService<ApplyMigrationsBackgroundService>();
@@ -215,6 +218,26 @@ namespace Test.Infastructure
                 });
 
             services.AddAuthorization();
+
+            return services;
+        }
+
+        private static IServiceCollection ConfigureRedisCaching(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var connectionString = configuration
+                .GetConnectionString("RedisCacheConnection") ??
+                throw new AppConfigurationException("Redis connection string");
+
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = connectionString;
+                options.InstanceName = "TestsCaching";
+            });
+
+            services.AddSingleton<IConnectionMultiplexer>(
+                ConnectionMultiplexer.Connect(connectionString));
 
             return services;
         }

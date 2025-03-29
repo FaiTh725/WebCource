@@ -222,3 +222,7 @@ C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\tr-TR\Hangfire.Core.re
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
 C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
 C:\VSProjects\WebCource\backend\Test.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\FluentValidation.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\VSProjects\WebCource\backend\Test.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll

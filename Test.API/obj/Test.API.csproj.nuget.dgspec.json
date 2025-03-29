@@ -63,6 +63,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -467,6 +471,10 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.IdentityModel.Protocols": {
               "target": "Package",
               "version": "[8.7.0, )"
@@ -474,6 +482,10 @@
             "Microsoft.IdentityModel.Protocols.OpenIdConnect": {
               "target": "Package",
               "version": "[8.7.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.31, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

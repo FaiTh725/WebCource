@@ -1,4 +1,5 @@
 using Hangfire;
+using Test.API.Extentions;
 using Test.API.Middlewares;
 using Test.Application;
 using Test.Dal;
@@ -16,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>();
 
 builder.Services.AddHttpClient();
+builder.Services.ConfigureValidators();
 
 builder.Services.AddDalRepositories();
 builder.Services.ConfigureInfastructureServices(builder.Configuration);

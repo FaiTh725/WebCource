@@ -2,7 +2,7 @@
 using Authorize.Application.Contacts.Token;
 using Authorize.Application.Contacts.User;
 using Authorize.Application.Interfaces;
-using Authorize.Infastructure.Helpers.Jwt;
+using Authorize.Infastructure.Configurations;
 using CSharpFunctionalExtensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
